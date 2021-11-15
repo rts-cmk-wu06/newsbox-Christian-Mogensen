@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+@import url("https://typekit.com/fonts/europa");
+@import url('https://typekit.com/fonts/rift-soft');
+
+h1{
+    font-family: europa;
+}
+
+p {
+    font-family: Rift Soft;
+}
+
+</style> -->
+  </head>
+  <body>
+    <!-- <h1>Lorem ipsum dolor sit.</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aspernatur ab, ea necessitatibus labore quaerat!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum incidunt quis nihil. Pariatur consequatur distinctio perferendis dolore odio voluptatum laboriosam, voluptatem autem sint, aliquid quis numquam cum, maxime iure aut!</p>
+      <p>Placeat ipsum earum repellendus. Sint quis illo iure error doloremque nisi voluptates minus voluptas officia est praesentium qui sed enim assumenda, aspernatur numquam expedita nihil sit, officiis dolorem quae sequi!</p>
+      <p>Veritatis, ab odit. Necessitatibus harum porro ipsam veritatis. Eaque amet id eligendi ratione magnam, hic itaque quos quidem ab ullam nostrum doloremque nesciunt, animi molestiae harum nemo tempora! Accusamus, a.</p> -->
+    <!-- <button onclick="execute()">Execute</button> -->
+    <div id="text"></div>
+    <button id="loadMore">loadmore</button>
+
+    <script>
+        const btn = document.querySelector('#loadMore')
+      const txt = document.querySelector("#text");
+    //   const newdata = [];
+    
+    
+    const url =
+    "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=3Y6iE37kXOnVAcVMU57a4fyOwQWmZCmJ";
+    // WARNING: fetch is not supported in IE, so it may need a polyfill
+    const options = {
+        method: "GET",
+        headers: {
+            Accept: "application/json",
+        },
+    };
+    async function funcName(url) {
+        const response = await fetch(url, options);
+        let data = await response.json();
+    }
+    //   function execute() {
+        fetch(url, options)
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            }
+        })
+        .then((data) => {
+            console.log(data.results)
+            const dataItems = data.results
+            let increment = 3;
+            let loadmore = increment
+                btn.addEventListener('click', () => {
+                    increment = increment + 3
+                    window.localStorage.setItem('number',JSON.stringify(increment));
+                    // loadmore = loadmore + 3
+                    // console.log(localStorage);
+                    let numberParse = JSON.parse(localStorage.getItem('number'));
+                    console.log(numberParse);
+                    // setTimeout(()=>{
+                    //     location.reload();
+                    // }, 1000)
+                    
+                    for (let index = 0; index < `${numberParse}`; index++) {
+                const item = dataItems[index];
+                
+                text.innerHTML += `
+                <a href='${item.url}'>
+                    <h2>${item.title}</h2>
+                    <p>${item.byline}</p>
+                    <p>${item.abstract}</p></a>
+                    `
+                    console.log(item);
+                    
+                    
+                }
+                // dataItems.forEach(item => {
+            })
+            //     text.innerHTML += `
+            //     <a href='${item.url}'>
+                //     <h2>${item.title}</h2>
+                //     <p>${item.byline}</p>
+                //     <p>${item.abstract}</p></a>
+                //     `
+                //     console.log(item);
+                
+                // });
+                // console.log(data)
+                // text.textContent = data
+                
+                // data.foreach(section = () =>{
+                    //     console.log(section)
+        // })
+        
+        });
+
+      //     return response.text().then(err => {
+      //       return Promise.reject({
+      //         status: response.status,
+      //         statusText: response.statusText,
+      //         errorMessage: err,
+      //       });
+      //     });
+      //   })
+      //       .then(data => {
+
+      //           console.log(data);
+      //         // txt.innerHTML = data
+
+      //       })
+      //       .catch(err => {
+      //         console.error(err);
+      //       });
+      // //   }
+    </script>
+  </body>
+</html>

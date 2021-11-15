@@ -1,0 +1,1485 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+  "section": "Arts",
+  "last_updated": "2021-11-14T12:27:47-05:00",
+  "num_results": 39,
+  "results": [
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Judge Ends Conservatorship Overseeing Britney Spears’s Life and Finances",
+      "abstract": "The pop star had called the arrangement, which governed her life for nearly 14 years, exploitative. A judge ruled it was “no longer required.”",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/britney-spears-conservatorship-ends.html",
+      "uri": "nyt://article/c626ac74-3e22-5795-a05b-b147af2b0119",
+      "byline": "By Joe Coscarelli and Julia Jacobs",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T09:53:05-05:00",
+      "created_date": "2021-11-12T19:16:27-05:00",
+      "published_date": "2021-11-12T19:16:27-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Wills and Estates",
+        "Suits and Litigation (Civil)",
+        "Decisions and Verdicts",
+        "Pop and Rock Music"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Spears, Britney",
+        "Spears, Jamie (1952- )",
+        "Penny, Brenda",
+        "Rosengart, Mathew S"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/arts/12britney-conservatorship-terminated/merlin_197735556_d7101328-d95f-421b-9c1b-d6fb1d8bcfb5-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1370,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Britney Spears performing in 2004.",
+          "copyright": "Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/30kBrHs"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Astroworld Disaster Rekindles Fears About Music Festival Safety",
+      "abstract": "The concert industry notes that serious problems are still rare, but over the years a number of deadly stampedes have shown the inherent dangers of big, excited crowds.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/astroworld-travis-scott-concert-safety.html",
+      "uri": "nyt://article/f4114de9-5b4d-5334-8f58-aaa64bef014f",
+      "byline": "By Ben Sisario",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:52:25-05:00",
+      "created_date": "2021-11-12T13:03:52-05:00",
+      "published_date": "2021-11-12T13:03:52-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Music",
+        "Security and Warning Systems",
+        "Stampedes",
+        "Astroworld Music Festival Stampede (2021)",
+        "Festivals"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/arts/00concert-safety1/merlin_197445576_c9cf476b-2ca6-4309-b3e5-396b2070903e-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Nine people died at Travis Scott’s Astroworld festival in Houston last week, putting a spotlight once again on safety at large concerts.",
+          "copyright": "Annie Mulligan for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3FgTuNz"
+    },
+    {
+      "section": "arts",
+      "subsection": "",
+      "title": "Donors Withhold Gifts to Protest Changes at Hamptons Sculpture Garden",
+      "abstract": "Some patrons of the LongHouse Reserve are upset that its veteran director was let go, but the board says it needed new leadership to expand the garden into a museum with a broader mission.",
+      "url": "https://www.nytimes.com/2021/11/14/arts/longhouse-reserve-east-hampton.html",
+      "uri": "nyt://article/b35812bc-cc28-5339-bdc9-2c291bd3ec11",
+      "byline": "By Stacey Stowe",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:54:06-05:00",
+      "created_date": "2021-11-14T10:00:11-05:00",
+      "published_date": "2021-11-14T10:00:11-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Sculpture",
+        "Museums",
+        "Art",
+        "Appointments and Executive Changes",
+        "Philanthropy",
+        "Boards of Directors"
+      ],
+      "org_facet": ["LongHouse Reserve"],
+      "per_facet": [
+        "Barratt, Carrie Rebora",
+        "Larsen, Jack Lenor",
+        "Tomicic, Matko"
+      ],
+      "geo_facet": ["East Hampton (NY)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14longhouse-1/merlin_197478927_c5291442-aae7-47e5-ac59-7d0ddb97d6f7-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The tranquility of LongHouse Reserve, a sculpture garden in East Hampton, has been disrupted by a dispute over the firing of its longtime director, and other matters.",
+          "copyright": "Eric Fischl/Artists Rights Society (ARS), NY; Lindsay Morris for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/2YLsGFn"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "‘S.N.L.’ Gives Ted Cruz His Own Version of ‘Sesame Street’",
+      "abstract": "The sketch show, hosted this weekend by Jonathan Majors, also featured a 10-minute performance from the musical guest Taylor Swift.",
+      "url": "https://www.nytimes.com/2021/11/14/arts/television/snl-taylor-swift-ted-cruz.html",
+      "uri": "nyt://article/a69a0a24-9b2a-5aab-b460-f60aafd601d5",
+      "byline": "By Dave Itzkoff",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:55:48-05:00",
+      "created_date": "2021-11-14T02:57:36-05:00",
+      "published_date": "2021-11-14T02:57:36-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Television", "Saturday Night Live (TV Program)"],
+      "org_facet": [],
+      "per_facet": [
+        "Bryant, Aidy",
+        "Jost, Colin",
+        "Swift, Taylor",
+        "Majors, Jonathan (1989- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14snl/14snl-superJumbo.png",
+          "format": "superJumbo",
+          "height": 1136,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kyle Mooney and Aidy Bryant played a knock-off Big Bird and Senator Ted Cruz on “S.N.L.,” in a parody of “Sesame Street” that recommended bathing in Borax to purge the Covid-19 vaccine.",
+          "copyright": "NBCUniversal, via YouTube"
+        }
+      ],
+      "short_url": "https://nyti.ms/3nbhv2f"
+    },
+    {
+      "section": "arts",
+      "subsection": "design",
+      "title": "‘Be Nice to Tourists’: New York’s Arts Scene Needs International Visitors",
+      "abstract": "The United States now allows vaccinated international travelers into the country. It’s welcome news for arts institutions that lost revenue and cut jobs during the pandemic.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/design/new-york-international-tourists.html",
+      "uri": "nyt://article/193cdb15-a47b-577c-a6da-3711e2d4538b",
+      "byline": "By Matt Stevens",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T00:12:39-05:00",
+      "created_date": "2021-11-12T12:00:12-05:00",
+      "published_date": "2021-11-12T12:00:12-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Museums",
+        "Travel and Vacations",
+        "Art",
+        "Theater",
+        "Coronavirus Reopenings",
+        "Advertising and Marketing"
+      ],
+      "org_facet": ["Metropolitan Museum of Art", "NYC \u0026 CO"],
+      "per_facet": [],
+      "geo_facet": ["New York City"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/arts/12broadway-visitors1/merlin_194763303_13d71fb8-1ae0-4a13-8451-f6d3edffa21c-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "About 70 percent of the tickets at the TKTS booth in Times Square are bought by tourists and roughly half of those sales are to foreign travelers.",
+          "copyright": "Karsten Moran for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3qwREUl"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Bruno Mars and Anderson .Paak Revisit Vintage Luxury as Silk Sonic",
+      "abstract": "The duo gleefully reverse-engineers the analog-era sophistication of 1970s R\u0026B on a new album, “An Evening With Silk Sonic.”",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/silk-sonic-bruno-mars.html",
+      "uri": "nyt://article/1760d8e2-7502-58bc-9afa-6b8efbe4cbab",
+      "byline": "By Jon Pareles",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T00:14:34-05:00",
+      "created_date": "2021-11-12T10:31:11-05:00",
+      "published_date": "2021-11-12T10:31:11-05:00",
+      "material_type_facet": "",
+      "kicker": "Album Review",
+      "des_facet": [
+        "Rhythm and Blues (Music)",
+        "An Evening With Silk Sonic (Album)"
+      ],
+      "org_facet": ["Silk Sonic (Music Group)"],
+      "per_facet": ["Anderson .Paak", "Mars, Bruno"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/arts/12silksonic-review/12silksonic-review-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Anderson .Paak and Bruno Mars revisit the bygone analog era of 1970s R\u0026B on a new collaborative album.",
+          "copyright": "Harper Smith"
+        }
+      ],
+      "short_url": "https://nyti.ms/3Db2iUz"
+    },
+    {
+      "section": "theater",
+      "subsection": "",
+      "title": "‘I Don’t Know What a Carrie Is’: Candace Bushnell Works It Out Onstage",
+      "abstract": "The writer maps her life in a one-woman show, “Is There Still Sex in the City?,” beginning previews this weekend at the Daryl Roth Theater.",
+      "url": "https://www.nytimes.com/2021/11/12/theater/candace-bushnell-is-there-still-sex-in-the-city.html",
+      "uri": "nyt://article/4c92b115-64bc-534d-8356-9a4788e878e1",
+      "byline": "By Alexis Soloski",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T14:10:44-05:00",
+      "created_date": "2021-11-12T10:46:11-05:00",
+      "published_date": "2021-11-12T10:46:11-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Content Type: Personal Profile",
+        "Theater",
+        "Books and Literature",
+        "Writing and Writers",
+        "Is There Still Sex in the City? (Play)"
+      ],
+      "org_facet": ["Daryl Roth Theater"],
+      "per_facet": ["Bushnell, Candace"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/arts/12BUSHNELL/12BUSHNELL-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1462,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Candace Bushnell at the Carlyle Hotel recently. She said she was a bit unnerved during the first performances of her show, which had a tryout at Bucks County Playhouse in New Hope, Pa.",
+          "copyright": "Celeste Sloman for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3HhgSfy"
+    },
+    {
+      "section": "arts",
+      "subsection": "design",
+      "title": "Hong Kong’s M+ Museum Is Finally Open. It’s Already in Danger.",
+      "abstract": "The museum, billed as Asia’s premier art institution, faced construction delays and personnel problems. Now it faces its greatest challenge: the threat of censorship.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/design/hong-kong-m-museum-censorship.html",
+      "uri": "nyt://article/f6f7d702-bbf8-5d2c-94de-e0c9b3a1437e",
+      "byline": "By Vivian Wang",
+      "item_type": "Article",
+      "updated_date": "2021-11-15T01:57:56-05:00",
+      "created_date": "2021-11-12T05:00:38-05:00",
+      "published_date": "2021-11-12T05:00:38-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Art",
+        "Politics and Government",
+        "Museums",
+        "Censorship",
+        "Freedom of Speech and Expression"
+      ],
+      "org_facet": ["M+ (Hong Kong Museum)", "Communist Party of China"],
+      "per_facet": [],
+      "geo_facet": ["Hong Kong", "China"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/world/00m-museum-hongkong1/merlin_197563032_37115d60-3811-4012-bc20-67159da4f357-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "As the M+ Museum in Hong Kong opened on Friday, its greatest challenge was just materializing: the threat of censorship from the Chinese Communist Party.",
+          "copyright": "Tyrone Siu/Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/2YEeP3E"
+    },
+    {
+      "section": "arts",
+      "subsection": "design",
+      "title": "He Stalks Delirious, Unfinished New York as It Rises",
+      "abstract": "Nick Relph’s new book, “Eclipse Body \u0026 Soul Syntax,” collects years of digital street scans of New York City construction posters, an eerie portrait of a supersizing metropolis.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/design/nick-relph-eclipse-body-soul-syntax.html",
+      "uri": "nyt://article/11d19af0-9316-524e-b639-5368741c4edb",
+      "byline": "By Randy Kennedy",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T11:47:49-05:00",
+      "created_date": "2021-11-12T05:00:40-05:00",
+      "published_date": "2021-11-12T05:00:40-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Art",
+        "Content Type: Personal Profile",
+        "Building (Construction)",
+        "Books and Literature",
+        "Posters",
+        "Architecture",
+        "Eclipse Body \u0026 Soul Syntax (Book)"
+      ],
+      "org_facet": [],
+      "per_facet": ["Relph, Nick"],
+      "geo_facet": ["New York City"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14Relph-book-2/merlin_197168208_e14a7808-6348-4ff5-9c0b-eaad0ef8d366-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The artist Nick Relph at a construction site in Brooklyn, where residential towers are rising everywhere. He has spent seven years scanning renderings of buildings on construction posters, which are collected in a new book. ",
+          "copyright": "Sinna Nasseri for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/30c97GG"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "The Stakes Are Sky-High for a ‘Ring’ Coming to the Met Opera",
+      "abstract": "For Richard Jones, the director of a staging that will open in London and later travel to New York, this is a third attempt at Wagner’s epic.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/opera-wagner-ring-met.html",
+      "uri": "nyt://article/1b17c519-7ba3-5691-b62c-ef7e337751e4",
+      "byline": "By Matthew Anderson",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T05:00:22-05:00",
+      "created_date": "2021-11-12T05:00:22-05:00",
+      "published_date": "2021-11-12T05:00:22-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Opera",
+        "Der Ring des Nibelungen (Opera)",
+        "Die Walkure (Opera)"
+      ],
+      "org_facet": ["English National Opera", "Metropolitan Opera"],
+      "per_facet": [
+        "Gelb, Peter",
+        "Jones, Richard (1953- )",
+        "Wagner, Richard"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/arts/15wagner-london-1-inyt/merlin_197358708_78d24bf1-6762-4026-bc70-bfab026dcddc-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1639,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The “Ring” is “a monstrous, pulsating, ambiguous, big, queer thing,” Jones said.",
+          "copyright": "Kalpesh Lathigra for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3D9FZOJ"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Review: The Cellist Sheku Kanneh-Mason Makes an Entrance",
+      "abstract": "A young star made his New York Philharmonic debut in an evening of bold, charismatic musical storytelling.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/sheku-kanneh-mason-new-york-philharmonic.html",
+      "uri": "nyt://article/a7448463-0397-55df-ae67-7c52e1ddcb87",
+      "byline": "By Joshua Barone",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T00:13:39-05:00",
+      "created_date": "2021-11-12T12:01:41-05:00",
+      "published_date": "2021-11-12T12:01:41-05:00",
+      "material_type_facet": "",
+      "kicker": "Critic’s Pick",
+      "des_facet": ["Classical Music"],
+      "org_facet": ["New York Philharmonic"],
+      "per_facet": ["Young, Simone", "Kanneh-Mason, Sheku", "Lakner, Larissa"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/arts/12NYPhil-1/merlin_197727390_ad24dab4-d6ba-40a0-b991-7919c603064e-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Simone Young conducts the New York Philharmonic with Sheku Kanneh-Mason making his debut at Alice Tully Hall, 11/11/2021",
+          "copyright": "Chris Lee"
+        }
+      ],
+      "short_url": "https://nyti.ms/3oqQV4u"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Review: Young Concert Artists Is Back, With a Superb Pianist",
+      "abstract": "Zhu Wang played an unusually interesting and adventurous set of pieces at Zankel Hall.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/young-concert-artists-zhu-wang.html",
+      "uri": "nyt://article/cbd3aa92-7ab7-53de-9571-ace749055685",
+      "byline": "By Anthony Tommasini",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T00:14:54-05:00",
+      "created_date": "2021-11-12T12:27:41-05:00",
+      "published_date": "2021-11-12T12:27:41-05:00",
+      "material_type_facet": "",
+      "kicker": "Critic’s Pick",
+      "des_facet": ["Classical Music"],
+      "org_facet": ["Young Concert Artists"],
+      "per_facet": ["Zhu Wang"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/arts/12piano/merlin_197712936_454c98a2-dbf1-44b0-ad1d-ddb2123dc479-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The pianist Zhu Wang made his New York debut with a recital on Thursday at Zankel Hall, presented by Young Concert Artists.",
+          "copyright": "Caitlin Ochs for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3wFEjdy"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "The Best of Late Night This Week 🌙",
+      "abstract": "The hosts had plenty to talk about this week, including President Biden's approval rating and Big Bird's vaccination status.",
+      "url": "https://www.nytimes.com/interactive/2021/11/12/arts/television/best-of-late-night.html",
+      "uri": "nyt://interactive/d772c2f6-44b2-5e14-8246-5e617a663c93",
+      "byline": "By Trish Bendix",
+      "item_type": "Interactive",
+      "updated_date": "2021-11-12T17:02:28-05:00",
+      "created_date": "2021-11-12T17:02:28-05:00",
+      "published_date": "2021-11-12T17:02:28-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/multimedia/12boln-burst-1/12boln-burst-1-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1364,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Doug Mills/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3wHlIh5"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "5 Songs to Listen to Right Now",
+      "abstract": "I write about pop music for The New York Times. Here are five new and notable songs, including Kylie Minogue and Jessie Ware’s duet and TNGHT’s return.",
+      "url": "https://www.nytimes.com/interactive/2021/11/12/arts/music/pop-recommendations-kylie-minogue.html",
+      "uri": "nyt://interactive/06b4623c-3ffb-5a3e-b82f-27eed3541136",
+      "byline": "",
+      "item_type": "Interactive",
+      "updated_date": "2021-11-12T17:44:57-05:00",
+      "created_date": "2021-11-12T17:44:57-05:00",
+      "published_date": "2021-11-12T17:44:57-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Pop and Rock Music"],
+      "org_facet": ["Pinegrove (Music Group)", "TNGHT (Music Group)"],
+      "per_facet": [
+        "ASAP Rocky",
+        "Minogue, Kylie",
+        "Ware, Jessie",
+        "Swift, Taylor",
+        "Bridgers, Phoebe (1994- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/multimedia/12playlist-burst/12playlist-burst-superJumbo-v2.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Eduardo Munoz/Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/3C5wvms"
+    },
+    {
+      "section": "arts",
+      "subsection": "",
+      "title": "The Art of Botox",
+      "abstract": "How facial muscle paralysis insinuated itself into our emotional and creative lives.",
+      "url": "https://www.nytimes.com/2021/11/15/arts/botox-erroll-morris-kidman.html",
+      "uri": "nyt://article/a35eddcc-8592-59f5-84f8-7f21217df896",
+      "byline": "By Amanda Hess",
+      "item_type": "Article",
+      "updated_date": "2021-11-15T05:00:13-05:00",
+      "created_date": "2021-11-15T05:00:13-05:00",
+      "published_date": "2021-11-15T05:00:13-05:00",
+      "material_type_facet": "",
+      "kicker": "Critic’s Notebook",
+      "des_facet": [
+        "Botox (Drug)",
+        "Television",
+        "Movies",
+        "Women and Girls",
+        "Reality Television",
+        "Big Little Lies (TV Program)"
+      ],
+      "org_facet": [],
+      "per_facet": ["Kidman, Nicole", "Morris, Errol"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/arts/15Botox-Notebook/15Botox-Notebook-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1220,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Tara Booth"
+        }
+      ],
+      "short_url": "https://nyti.ms/3DjJnH9"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "A Landmark Reckoning With America’s Racial Past and Present",
+      "abstract": "Originally published as a series in The New York Times Magazine and now revised and expanded as a book, “The 1619 Project,” edited by Nikole Hannah-Jones, Caitlin Roper, Ilena Silverman and Jake Silverstein, undertakes an ambitious examination of slavery and its ongoing legacy for Black Americans.",
+      "url": "https://www.nytimes.com/2021/11/15/books/review/the-1619-project-nikole-hannah-jones-caitlin-roper-ilena-silverman-jake-silverstein.html",
+      "uri": "nyt://article/4c301fb9-6ea5-5b33-8fd6-21d9ccd1f9ca",
+      "byline": "By Adam Hochschild",
+      "item_type": "Article",
+      "updated_date": "2021-11-15T07:43:37-05:00",
+      "created_date": "2021-11-15T05:00:04-05:00",
+      "published_date": "2021-11-15T05:00:04-05:00",
+      "material_type_facet": "",
+      "kicker": "Nonfiction",
+      "des_facet": [
+        "Books and Literature",
+        "Slavery (Historical)",
+        "Black People",
+        "Discrimination",
+        "United States Politics and Government",
+        "Revolutionary War, American (1775-83)",
+        "Civil War (US) (1861-65)",
+        "Segregation and Desegregation",
+        "Constitution (US)",
+        "The 1619 Project: A New Origin Story (Book)"
+      ],
+      "org_facet": [],
+      "per_facet": ["Hannah-Jones,  Nikole"],
+      "geo_facet": ["United States"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/21/books/review/21Hochschild1/21Lawrence1-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1537,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A panel by Jacob Lawrence from his series “Struggle: From the History of the American People” (1954-56).",
+          "copyright": "Jacob Lawrence, The Jacob and Gwendolyn Knight Lawrence Foundation, Seattle/Artists Rights Society (ARS), New York"
+        }
+      ],
+      "short_url": "https://nyti.ms/3cfwXnA"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "A Young Wife Becomes Pregnant — With an Owl",
+      "abstract": "In Claire Oshetsky’s surrealistic debut, “Chouette,” motherhood presents an otherworldly dichotomy.",
+      "url": "https://www.nytimes.com/2021/11/15/books/review/chouette-claire-oshetsky.html",
+      "uri": "nyt://article/c3e76948-219b-54f2-9f99-2014ab0b583c",
+      "byline": "By Marie-Helene Bertino",
+      "item_type": "Article",
+      "updated_date": "2021-11-15T05:00:04-05:00",
+      "created_date": "2021-11-15T05:00:04-05:00",
+      "published_date": "2021-11-15T05:00:04-05:00",
+      "material_type_facet": "",
+      "kicker": "Fiction",
+      "des_facet": ["Books and Literature", "Chouette (Book)"],
+      "org_facet": [],
+      "per_facet": ["Oshetsky, Claire"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/21/books/review/21BERTINO/17BERTINO-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 724,
+          "width": 1880,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Eleanor Taylor"
+        }
+      ],
+      "short_url": "https://nyti.ms/3DkeJx5"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "What’s on TV This Week: ‘Simple as Water’ and the American Music Awards",
+      "abstract": "HBO airs a documentary about families affected by the civil war in Syria. And Cardi B hosts the 2021 American Music Awards on ABC.",
+      "url": "https://www.nytimes.com/2021/11/15/arts/television/whats-on-tv-this-week-simple-as-water-and-the-american-music-awards.html",
+      "uri": "nyt://article/16ddb9c3-70b5-5171-9026-c71966e9824f",
+      "byline": "By Gabe Cohn",
+      "item_type": "Article",
+      "updated_date": "2021-11-15T01:00:07-05:00",
+      "created_date": "2021-11-15T01:00:07-05:00",
+      "published_date": "2021-11-15T01:00:07-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Television",
+        "Movies",
+        "Boogie Nights (Song)",
+        "Showdown  (TV Program)",
+        "Simple as Water (Movie)",
+        "Harry Potter and the Sorcerer's Stone (Movie)",
+        "High Anxiety (Movie)",
+        "American Music Awards"
+      ],
+      "org_facet": [
+        "ABC Inc",
+        "Home Box Office",
+        "Public Broadcasting Service",
+        "Rock and Roll Hall of Fame and Museum",
+        "Turner Classic Movies"
+      ],
+      "per_facet": ["Salonen, Esa-Pekka"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/multimedia/15tvcol-simpleaswater/15tvcol-simpleaswater-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1364,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In “Simple as Water,” the documentarian Megan Mylan follows an array of Syrian families whose lives have been changed by the war. ",
+          "copyright": "HBO Documentary Films"
+        }
+      ],
+      "short_url": "https://nyti.ms/3kDash4"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "‘Insecure’ Recap, Season 3 Episode 4: The Earth Moves",
+      "abstract": "This season, Issa has undergone plenty of personal evolution, but some people still bring out her old self-doubt.",
+      "url": "https://www.nytimes.com/2021/11/14/arts/television/insecure-recap-season-3-episode-4.html",
+      "uri": "nyt://article/a6c7d716-43ac-5dc5-99b0-8d970636500c",
+      "byline": "By Sandra E. Garcia",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T22:31:04-05:00",
+      "created_date": "2021-11-14T22:31:04-05:00",
+      "published_date": "2021-11-14T22:31:04-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Television", "Insecure (TV Program)"],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14insecure/14insecure-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 726,
+          "width": 1236,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kendrick Sampson and Issa Rae in “Insecure.”",
+          "copyright": "HBO"
+        }
+      ],
+      "short_url": "https://nyti.ms/3Dg0fP2"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "‘Succession’ Season 3, Episode 5: Imaginary Dead Cat Bounce",
+      "abstract": "The problem with staking everything on one imposing figurehead is that eventually they get old and senile.",
+      "url": "https://www.nytimes.com/2021/11/14/arts/television/succession-recap-episode-5.html",
+      "uri": "nyt://article/40e7bb9e-ca6b-5455-943d-2a941a220c14",
+      "byline": "By Noel Murray",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T22:00:05-05:00",
+      "created_date": "2021-11-14T22:00:05-05:00",
+      "published_date": "2021-11-14T22:00:05-05:00",
+      "material_type_facet": "",
+      "kicker": "Succession",
+      "des_facet": ["Television", "Succession (TV Program)"],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14succession-recap/14succession-recap-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1280,
+          "width": 1920,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The king’s gone mad; from left, Kieran Culkin, Sarah Snook and Matthew Macfadyen in a scene from “Succession.”",
+          "copyright": "Macall B. Polay/HBO"
+        }
+      ],
+      "short_url": "https://nyti.ms/3CkKKUy"
+    },
+    {
+      "section": "theater",
+      "subsection": "",
+      "title": "Review: This Revival of Sondheim’s ‘Assassins’ Misses Its Mark",
+      "abstract": "The production lacks the power to unsettle despite a fine cast of killers and wannabes who changed, or at least made, history gunning for presidents.",
+      "url": "https://www.nytimes.com/2021/11/14/theater/assassins-review-classic-stage.html",
+      "uri": "nyt://article/bbbd607d-07df-50a4-aef5-4a4698c53ce9",
+      "byline": "By Laura Collins-Hughes",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:54:40-05:00",
+      "created_date": "2021-11-14T18:45:06-05:00",
+      "published_date": "2021-11-14T18:45:06-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Theater", "Assassins (Play)"],
+      "org_facet": ["Classic Stage Company"],
+      "per_facet": [
+        "Gevinson, Tavi",
+        "Grotelueschen, Andy",
+        "Kuhn, Judy",
+        "Pasquale, Steven",
+        "Swenson, Will",
+        "Sondheim, Stephen",
+        "Weidman, John"
+      ],
+      "geo_facet": ["Manhattan (NYC)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/arts/14ASSASSINS-1/merlin_197769513_b7184eb5-7c31-4706-a7ea-0170d812464c-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1590,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "From left: Brandon Uranowitz as Leon Czolgosz, Judy Kuhn as Sara Jane Moore and Steven Pasquale as John Wilkes Booth in “Assassins” at the Classic Stage Company.",
+          "copyright": "Sara Krulwich/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3kCkkYh"
+    },
+    {
+      "section": "books",
+      "subsection": "",
+      "title": "Lee Maracle, Combative Indigenous Author, Dies at 71",
+      "abstract": "She collected signatures to persuade publishers that people would buy her books. She became a foundational figure in Indigenous literature.",
+      "url": "https://www.nytimes.com/2021/11/14/books/lee-maracle-dead.html",
+      "uri": "nyt://article/b7b40eaa-2567-52b1-8c6e-ef555cc794a0",
+      "byline": "By Alex Traub",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T17:20:22-05:00",
+      "created_date": "2021-11-14T17:20:22-05:00",
+      "published_date": "2021-11-14T17:20:22-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Indigenous People",
+        "Writing and Writers",
+        "Discrimination",
+        "Books and Literature",
+        "Poetry and Poets"
+      ],
+      "org_facet": [],
+      "per_facet": ["Maracle, Lee (1950-2021)"],
+      "geo_facet": ["Canada"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/obituaries/12Maracle2/12Maracle2-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1409,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The author Lee Maracle in 2017. She was an early figure in the modern literary canon of Canada’s First Nations. ",
+          "copyright": "Bernard Weil/Toronto Star via Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/3ovaBEw"
+    },
+    {
+      "section": "obituaries",
+      "subsection": "",
+      "title": "Etel Adnan, Lebanese American Author and Artist, Dies at 96",
+      "abstract": "Her novel about a kidnapping in Lebanon has become a classic of war literature. She was in her 80s when her art started to draw international attention.",
+      "url": "https://www.nytimes.com/2021/11/14/obituaries/etel-adnan-dead.html",
+      "uri": "nyt://article/f4bca4e1-2a9e-590d-8141-b5defb5afc90",
+      "byline": "By Nana Asfour",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:50:43-05:00",
+      "created_date": "2021-11-14T15:42:46-05:00",
+      "published_date": "2021-11-14T15:42:46-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Books and Literature",
+        "Poetry and Poets",
+        "Deaths (Obituaries)",
+        "Sitt Marie Rose (Book)",
+        "Night (Book)"
+      ],
+      "org_facet": [],
+      "per_facet": ["Adnan, Etel"],
+      "geo_facet": ["Beirut (Lebanon)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/obituaries/00adnan-1/00adnan-1-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Etel Adnan in 2015 in her studio in Paris. In her poetry, novels and nonfiction, she often wrote about political discord and violence in the Middle East.",
+          "copyright": "Catherine Panchout/Sygma via Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/31VcGSp"
+    },
+    {
+      "section": "books",
+      "subsection": "",
+      "title": "How Hanif Abdurraqib Cuts Through the Noise",
+      "abstract": "He is a National Book Award finalist for “A Little Devil in America,” but he has more books to write, more projects to take on and more s’mores to research.",
+      "url": "https://www.nytimes.com/2021/11/14/books/hanif-abdurraqib-little-devil-america-national-book-awards.html",
+      "uri": "nyt://article/88ffec20-5221-5db3-9c0b-903afe7a9d28",
+      "byline": "By Elizabeth A. Harris",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:51:49-05:00",
+      "created_date": "2021-11-14T05:00:11-05:00",
+      "published_date": "2021-11-14T05:00:11-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Content Type: Personal Profile",
+        "Writing and Writers",
+        "Books and Literature",
+        "Poetry and Poets",
+        "National Book Awards",
+        "A Little Devil in America: Notes in Praise of Black Performance (Book)"
+      ],
+      "org_facet": [],
+      "per_facet": ["Abdurraqib, Hanif"],
+      "geo_facet": ["Columbus (Ohio)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/09/books/09Abdurraqib2/merlin_197443962_5e48fda2-0c41-4b41-b845-6b940667e2aa-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1366,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“I’m not trying to be aloof,” Hanif Abdurraqib said. “My superpower is that I mind my own business.”",
+          "copyright": "Brian Kaiser for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3oqH5zx"
+    },
+    {
+      "section": "nyregion",
+      "subsection": "",
+      "title": "Bettina Grossman, an Artistic Fixture at the Chelsea Hotel, Dies at 94",
+      "abstract": "Her apartment was so crowded with her artwork that she slept in the hallway. But she did not become widely known until near the end of her life.",
+      "url": "https://www.nytimes.com/2021/11/13/nyregion/bettina-grossman-dead.html",
+      "uri": "nyt://article/7a1d3aa0-5159-5db1-aabc-0a4837a52b7b",
+      "byline": "By Corey Kilgannon",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T23:50:06-05:00",
+      "created_date": "2021-11-13T15:59:53-05:00",
+      "published_date": "2021-11-13T15:59:53-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Deaths (Obituaries)", "Art", "Photography", "Sculpture"],
+      "org_facet": ["Hotel Chelsea (Manhattan, NY)"],
+      "per_facet": ["Grossman, Bettina"],
+      "geo_facet": ["Europe"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/15/obituaries/11Grossman1/merlin_197526753_619386c0-1766-4183-b4d1-b9c5b0060469-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bettina Grossman and her work in 2011 outside her apartment in the Chelsea Hotel in Manhattan, where she lived for a half-century.",
+          "copyright": "Hiroko Masuike/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/30nvh8P"
+    },
+    {
+      "section": "books",
+      "subsection": "",
+      "title": "Book Excerpt: Navy SEAL’s Behavior Led Teammates to Change Their Mission",
+      "abstract": "In ‘Alpha,’ a Times reporter details the SEALs culture that fostered Eddie Gallagher’s rise and sheds new light on the events that led to his trial (and acquittal) in a polarizing war crimes case.",
+      "url": "https://www.nytimes.com/2021/11/13/books/eddie-gallagher-alpha-excerpt.html",
+      "uri": "nyt://article/aefb2f31-a051-5c00-9573-2f72d807bb89",
+      "byline": "",
+      "item_type": "Article",
+      "updated_date": "2021-11-14T13:03:30-05:00",
+      "created_date": "2021-11-13T05:00:12-05:00",
+      "published_date": "2021-11-13T05:00:12-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Books and Literature",
+        "United States Defense and Military Forces",
+        "War Crimes, Genocide and Crimes Against Humanity"
+      ],
+      "org_facet": ["Navy Seals", "Islamic State in Iraq and Syria (ISIS)"],
+      "per_facet": ["Gallagher, Edward (1979- )", "Philipps, David (1977- )"],
+      "geo_facet": ["Mosul (Iraq)", "Iraq"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/10/05/multimedia/00alpha-excerpt-01/00alpha-excerpt-01-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1513,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Navy Special Operations Chief Edward Gallagher arriving at military court at Naval Base San Diego in June 2019. Chief Gallagher, who was on trial for war crimes, was acquitted on the most serious charges.",
+          "copyright": "KC Alfred/ZUMA Wire/Alamy Live News"
+        }
+      ],
+      "short_url": "https://nyti.ms/3kviEjy"
+    },
+    {
+      "section": "theater",
+      "subsection": "",
+      "title": "Review: Theater Professors Are Under the Gun in ‘Preparedness’",
+      "abstract": "In this workplace comedy, beleaguered colleagues struggle to come together for an active-shooter training exercise.",
+      "url": "https://www.nytimes.com/2021/11/12/theater/preparedness-review-hillary-miller.html",
+      "uri": "nyt://article/9671f5f7-9e7b-5eb0-ae3c-fed42510c8ba",
+      "byline": "By Elisabeth Vincentelli",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T00:15:29-05:00",
+      "created_date": "2021-11-12T21:45:05-05:00",
+      "published_date": "2021-11-12T21:45:05-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Theater", "Preparedness (Play)"],
+      "org_facet": ["Bushwick Starr", "HERE Arts Center"],
+      "per_facet": ["Miller, Hillary (Playwright)", "Thor, Kristjan"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/13/arts/12preparedness1/merlin_197630358_6529c60a-2bd8-4995-a500-ab1434f3a1ad-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1298,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "As part of the “Preparedness” training, Alison Cimmet, second from right, shows a simulated emergency to the theater professors played by (from left) Luis Moreno, KK Moggie, Nora Cole, Lou Liberatore and Tracy Hazas.",
+          "copyright": "Sara Krulwich/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3kAjc7L"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Experts said it was unusual to end a conservatorship without a mental health screening.",
+      "abstract": "Britney Spears had asked for the arrangement to be ended without having to undergo further psychological assessments; a judge agreed.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/britney-spears-psychological-evaluation-conservatorship.html",
+      "uri": "nyt://article/805512c6-8f5e-5b43-9021-83686c20b801",
+      "byline": "By Graham Bowley",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T20:12:37-05:00",
+      "created_date": "2021-11-12T19:40:50-05:00",
+      "published_date": "2021-11-12T19:40:50-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Psychology and Psychologists",
+        "Decisions and Verdicts",
+        "Mental Health and Disorders"
+      ],
+      "org_facet": ["American Civil Liberties Union"],
+      "per_facet": ["Spears, Britney", "Penny, Brenda"],
+      "geo_facet": ["Los Angeles (Calif)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/arts/12britney-evalreax/12britney-evalreax-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1439,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Britney Spears in 2013.",
+          "copyright": "Jason Merritt/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/30iRcOs"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Graeme Edge, Drummer and Co-Founder of the Moody Blues, Dies at 80",
+      "abstract": "Many of their songs incorporated his spoken-word poetry, making them pioneers in the prog-rock movement of the late-1960s and ’70s.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/graeme-edge-dead.html",
+      "uri": "nyt://article/a837c999-ab4b-51ef-a27a-d9e9e5efd0fa",
+      "byline": "By Clay Risen",
+      "item_type": "Article",
+      "updated_date": "2021-11-13T23:43:41-05:00",
+      "created_date": "2021-11-12T19:18:34-05:00",
+      "published_date": "2021-11-12T19:18:34-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Pop and Rock Music", "Deaths (Obituaries)"],
+      "org_facet": [
+        "Moody Blues (Music Group)",
+        "Rock and Roll Hall of Fame and Museum"
+      ],
+      "per_facet": ["Edge, Graeme (1941-2021)"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/obituaries/12Edge1/merlin_132079451_3b8b2d3d-d5ce-489c-9966-f01cf6be9de5-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1375,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Graeme Edge, left, with his fellow members of the Moody Blues, exemplars of the prog-rock movement, in 1971. The others, from left, were Ray Thomas, John Lodge, Mike Pinder and Justin Hayward.",
+          "copyright": "Chris Walter/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/31YMq9V"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "Why Snow Casts Such a Spell",
+      "abstract": "Maggie O’Farrell’s “Where Snow Angels Go” and Susan Taghdis’s “The Snowman and the Sun”: Two stories of loss and renewal.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/maggie-o-farrell-where-snow-angels-go.html",
+      "uri": "nyt://article/3a2805d9-3c4c-5ee5-b37f-4184ac3549e8",
+      "byline": "By Eowyn Ivey",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T16:41:25-05:00",
+      "created_date": "2021-11-12T16:41:25-05:00",
+      "published_date": "2021-11-12T16:41:25-05:00",
+      "material_type_facet": "",
+      "kicker": "Picture Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "The Snowman and the Sun (Book)",
+        "genre-books-childrens"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "O'Farrell, Maggie",
+        "Taghdis, Susan",
+        "Mafakheri, Ali",
+        "Rassi, Azita"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14KIDS-SNOWANGELSUB/14KIDS-SNOWANGELSUB-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1640,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "From “Where Snow Angels Go.”",
+          "copyright": "Daniela Jaglenka Terrazzini"
+        }
+      ],
+      "short_url": "https://nyti.ms/3orBYz1"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Spears’s lawyer is pushing for the singer’s father to be investigated.",
+      "abstract": "Mathew S. Rosengart, Spears’s lawyer, has accused James P. Spears of financial mismanagement, along with the estate’s former business manager, Tri Star Sports \u0026 Entertainment Group.",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/jamie-spears-britney-investigation.html",
+      "uri": "nyt://article/6789caf9-642d-5691-9386-cc988e53b499",
+      "byline": "By Joe Coscarelli",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T17:27:51-05:00",
+      "created_date": "2021-11-12T16:03:14-05:00",
+      "published_date": "2021-11-12T16:03:14-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Wills and Estates"],
+      "org_facet": ["Tri Star Sports \u0026 Entertainment Group"],
+      "per_facet": [
+        "Rosengart, Mathew S",
+        "Spears, Britney",
+        "Spears, Jamie (1952- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/arts/12britney-jamie-spears-investigation/merlin_190155285_3ca14146-444a-4f79-9520-70a913208823-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1421,
+          "type": "image",
+          "subtype": "photo",
+          "caption": " James P. Spears, Britney Spears’s father, in 2008.",
+          "copyright": "Valerie Macon/Agence France-Presse — Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/3wKDYqa"
+    },
+    {
+      "section": "at-home",
+      "subsection": "",
+      "title": "What to Do This Weekend",
+      "abstract": "Watch “Passing,” plan for Thanksgiving.",
+      "url": "https://www.nytimes.com/2021/11/12/at-home/newsletter.html",
+      "uri": "nyt://article/6f75528d-e9bd-5ddc-abaa-e703752bdea7",
+      "byline": "By Melissa Kirsch",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T16:00:06-05:00",
+      "created_date": "2021-11-12T16:00:06-05:00",
+      "published_date": "2021-11-12T16:00:06-05:00",
+      "material_type_facet": "",
+      "kicker": "At Home and Away Newsletter",
+      "des_facet": ["Content Type: Service", "internal-sub-only-nl"],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/multimedia/12At-Home-Newsletter/12At-Home-Newsletter-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1166,
+          "width": 1750,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Derek Abella"
+        }
+      ],
+      "short_url": "https://nyti.ms/3HhlD92"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "New Picture Books Pose Two of Life’s Biggest Questions",
+      "abstract": "A caterpillar asks the meaning of beauty; a boy the meaning of love.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/mac-barnett-carson-ellis-what-is-love.html",
+      "uri": "nyt://article/805f1eb5-f416-543b-8b86-c89f63794dfb",
+      "byline": "By Paul O. Zelinsky",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T16:51:40-05:00",
+      "created_date": "2021-11-12T15:57:17-05:00",
+      "published_date": "2021-11-12T15:57:17-05:00",
+      "material_type_facet": "",
+      "kicker": "Picture Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "genre-books-childrens",
+        "How Beautiful (Book)",
+        "What is Love? (Book)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Castrillon, Melissa",
+        "Barnett, Mac",
+        "Ellis, Carson",
+        "Capetti, Antonella",
+        "Topi, Lisa"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14KIDS-HOWBEAUTIFUL/14KIDS-HOWBEAUTIFUL-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1106,
+          "width": 1718,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "From “How Beautiful.”",
+          "copyright": "Melissa Castrill\u0026oacute;n"
+        }
+      ],
+      "short_url": "https://nyti.ms/3ooSrEf"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "Ostriches Don’t Actually Bury Their Heads in the Sand",
+      "abstract": "Betsy Bird’s “Long Road to the Circus” blends history and zoology into a lively story for young readers.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/betsy-bird-david-small-long-road-to-the-circus.html",
+      "uri": "nyt://article/75449646-2586-5919-8ac9-61bea70ccf03",
+      "byline": "By Elisabeth Egan",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T16:46:29-05:00",
+      "created_date": "2021-11-12T15:43:55-05:00",
+      "published_date": "2021-11-12T15:43:55-05:00",
+      "material_type_facet": "",
+      "kicker": "Children’s Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "genre-books-childrens"
+      ],
+      "org_facet": [],
+      "per_facet": ["Bird, Betsy"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14-BKS-EGAN-KIDS/14-BKS-EGAN-KIDS-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1596,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": ""
+        }
+      ],
+      "short_url": "https://nyti.ms/30kBcf6"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "A Charming, Poignant Middle-Grade Memoir of Soviet Russia",
+      "abstract": "In “The Genius Under the Table,” the artist and writer Eugene Yelchin recalls his boyhood in 1970s Leningrad.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/eugene-yelchin-the-genius-under-the-table-growing-up-behind-the-iron-curtain.html",
+      "uri": "nyt://article/dfe43135-b3cd-57bd-b74f-8f006c446aa7",
+      "byline": "By Vera Brosgol",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T15:41:15-05:00",
+      "created_date": "2021-11-12T15:41:15-05:00",
+      "published_date": "2021-11-12T15:41:15-05:00",
+      "material_type_facet": "",
+      "kicker": "Children’s Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "genre-books-childrens",
+        "Cold War Era",
+        "Espionage and Intelligence Services"
+      ],
+      "org_facet": ["KGB"],
+      "per_facet": ["Yelchin, Eugene"],
+      "geo_facet": ["Russia", "USSR (Former Soviet Union)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14-BKS-BROSGOL-KIDS/14-BKS-BROSGOL-KIDS-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1395,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": ""
+        }
+      ],
+      "short_url": "https://nyti.ms/3F2GrPA"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "Hang It, Install It, Perform It — and Yes, Wear Your Art on Your Sleeve",
+      "abstract": "A picture book and two middle grade books introduce young people to art mediums and their messages.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/art-of-protest-de-nichols-diana-dagadita-molly-mendoza-olivia-twist-saddo-raul-oprea-diego-becas.html",
+      "uri": "nyt://article/472ad0dd-313b-58c8-91c1-3a234c668eb8",
+      "byline": "By Javaka Steptoe",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T17:35:41-05:00",
+      "created_date": "2021-11-12T15:35:51-05:00",
+      "published_date": "2021-11-12T15:35:51-05:00",
+      "material_type_facet": "",
+      "kicker": "Children’s Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "Art",
+        "Sculpture",
+        "Museums",
+        "Performance Art",
+        "Making a Great Exhibition (Book)",
+        "Art of Protest: Creating, Discovering, and Activating Art for Your Revolution (Book)",
+        "genre-books-childrens"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Blake, Rose (Illustrator)",
+        "Globus, Doro",
+        "Jackson, Sharna",
+        "Nichols, De",
+        "Dagadita, Diana",
+        "Mendoza, Molly",
+        "Twist, Olivia",
+        "Saddo (Artist)",
+        "Becas, Diego"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14KIDS-EXHIBITION/14KIDS-EXHIBITION-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1909,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "From “Making a Great Exhibition.”",
+          "copyright": "Rose Blake"
+        }
+      ],
+      "short_url": "https://nyti.ms/3wH2RD0"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "Portraits of Three Artists as Young Children",
+      "abstract": "“A Boy Named Isamu,” “Roots and Wings” and “Before I Grew Up” evoke the childhoods of Isamu Noguchi, Shahzia Sikander and Giuliano Cucco.",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/isamu-noguchi-shahzia-sikander-giuliano-cucco-picture-books-about-art-and-childhood.html",
+      "uri": "nyt://article/ec4eb268-59f6-5780-a854-e66ec58032b4",
+      "byline": "By Sergio Ruzzier",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T16:26:02-05:00",
+      "created_date": "2021-11-12T15:20:53-05:00",
+      "published_date": "2021-11-12T15:20:53-05:00",
+      "material_type_facet": "",
+      "kicker": "Picture Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "Art",
+        "A Boy Named Isamu: A Story of Isamu Noguchi (Book)",
+        "Roots and Wings: How Shahzia Sikander Became an Artist (Book)",
+        "Before I Grew Up (Book)",
+        "genre-books-childrens"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Yang, James (Illustrator)",
+        "Noguchi, Isamu",
+        "Sikander, Shahzia",
+        "Novesky, Amy (1970- )",
+        "Barczyk, Hanna",
+        "Miller, John (1931- )",
+        "Cucco, Giuliano"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/14/books/review/14ISAMU/14ISAMU-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1123,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "From “A Boy Named Isamu.”",
+          "copyright": "James Yang"
+        }
+      ],
+      "short_url": "https://nyti.ms/3c4OKh9"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Spears’s fans waited outside to hear her fate.",
+      "abstract": "",
+      "url": "https://www.nytimes.com/2021/11/12/arts/music/spearss-fans-wait-outside-to-hear-her-fate.html",
+      "uri": "nyt://article/863e5707-5080-5be3-b521-da4edf69057f",
+      "byline": "By Douglas Morino",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T18:16:18-05:00",
+      "created_date": "2021-11-12T15:15:59-05:00",
+      "published_date": "2021-11-12T15:15:59-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/multimedia/12britney-fans1/12britney-fans1-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Supporters of Britney Spears gathered outside the Stanley Mosk Courthouse on Friday. Saige Douglas decorated a “Free Britney” Christmas tree.",
+          "copyright": "Mike Blake/Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/30kvGtk"
+    },
+    {
+      "section": "books",
+      "subsection": "review",
+      "title": "3 Middle Grade Novels Explore the Bond Between Horse and Human",
+      "abstract": "New works of fiction by R.J. Palacio, Sharon M. Draper and J. Anderson Coats",
+      "url": "https://www.nytimes.com/2021/11/12/books/review/r-j-palacio-pony-sharon-m-draper-out-of-my-heart.html",
+      "uri": "nyt://article/4bfd7193-885b-587d-9adc-bdf41f71d0b0",
+      "byline": "By Sarah Maslin Nir",
+      "item_type": "Article",
+      "updated_date": "2021-11-12T15:02:34-05:00",
+      "created_date": "2021-11-12T15:02:34-05:00",
+      "published_date": "2021-11-12T15:02:34-05:00",
+      "material_type_facet": "",
+      "kicker": "Children’s Books",
+      "des_facet": [
+        "Books and Literature",
+        "Children and Childhood",
+        "Horses",
+        "Pony (Book)",
+        "Out of My Heart (Book)",
+        "The Night Ride (Book)",
+        "genre-books-childrens"
+      ],
+      "org_facet": [],
+      "per_facet": ["Palacio, R J", "Draper, Sharon M", "Coats, J Anderson"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2021/11/12/books/review/12-BKS-MIR-KIDS/14-BKS-MIR-KIDS-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 991,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": ""
+        }
+      ],
+      "short_url": "https://nyti.ms/3qwIbfT"
+    }
+  ]
+}
