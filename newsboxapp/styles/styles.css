@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://typekit.com/fonts/europa");
+@import url("https://typekit.com/fonts/rift-soft");
+
+:root {
+  /* Color */
+  --Primary-clr-Sage: #87bcbf;
+  --Primary-clr-Rust: #d97d54;
+  --Primary-clr-Drab: #324755;
+  --Primary-clr-Danger: #d95454;
+
+  --Secondary-clr-Ice: #f0f3f4;
+  --Secondary-clr-Fossil: #c8d1d3;
+  --Secondary-clr-Sand: #b9b0a2;
+
+  --Typografy-clr-Onyx: #1b1c20;
+  --Typografy-clr-Slate: #6e8ca0;
+  --Typografy-clr-Snow: #ffffff;
+}
+
+.Primary__heading,
+.Secondary__heading,
+.Section__heading,
+.Sub__title,
+.Card__title,
+.Card__copy_small,
+.Body__copy_small,
+.Message__time_stamp {
+  font-family: europa, "sans-serif";
+  color: var(--Typografy-clr-Onyx);
+}
+.Sub__title,
+.Card__copy_small,
+.Body__copy_small {
+    color: var(--Typografy-clr-Slate);
+}
+
+.Primary__heading {
+  font-weight: 700;
+  font-size: 30pt;
+}
+
+.Secondary__heading {
+  font-weight: 700;
+  font-size: 24pt;
+}
+.Section__heading {
+  font-weight: 700;
+  font-size: 18pt;
+}
+.Sub__title {
+  font-weight: 400;
+  font-size: 18pt;
+}
+.Card__title {
+  font-weight: 700;
+  font-size: 15pt;
+}
+.Card__copy_small {
+  font-weight: 200;
+  font-size: 15pt;
+}
+.Body__copy_small {
+    font-weight: 200;
+    font-size: 14pt;
+}
+.Message__time_stamp{
+    font-weight: 200;
+    font-size: 12pt;
+}
