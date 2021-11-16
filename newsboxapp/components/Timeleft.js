@@ -10,7 +10,7 @@ const Timeleft = () => {
     " dage tilbage til aflevering";
 
   return (
-    <div className="fixed bottom-10 right-10 text-5xl opacity-20 font-bold">
+    <div className="fixed bottom-10 right-10 text-sm opacity-20 font-bold">
       {test}
     </div>
   );
