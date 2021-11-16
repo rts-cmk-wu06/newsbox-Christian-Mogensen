@@ -1,16 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 
-// export const getStaticProps = async () => {
-//   const res = await fetch(
-//     "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=3Y6iE37kXOnVAcVMU57a4fyOwQWmZCmJ"
-//   );
-//   const data = await res.json();
+export const getStaticProps = async () => {
+  const res = await fetch(
+    "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=3Y6iE37kXOnVAcVMU57a4fyOwQWmZCmJ"
+  );
+  const data = await res.json();
 
-//   return {
-//     props: { articles: data },
-//   };
-// };
+  return {
+    props: { articles: data },
+  };
+};
 
 export default function Home({ articles }) {
   const truncate = (str, max, suffix) =>

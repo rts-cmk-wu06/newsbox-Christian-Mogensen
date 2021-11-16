@@ -1,6 +1,9 @@
 import ToggleSwitch from "../components/toggleSwitch";
 
+
+
 const setting = () => {
+
   return (
     <>
       <div className="wrapper">
