@@ -1,13 +1,25 @@
-import Header from '../components/Header'
-import '../styles/styles.css'
+import Header from "../components/Header";
+import Timeleft from "../components/Timeleft";
+import Footer from "../components/Footer";
+import "../styles/header.css";
+import "../styles/footer.css";
+
+import "../styles/styles.css";
+import "../styles/ToggleSwitch.css";
 
 function MyApp({ Component, pageProps }) {
+  Timeleft();
+
   return (
-  <>  
-  <Header />
-    <Component {...pageProps} />
+    <>
+      <div className="sm:max-w-md">
+        <Timeleft />
+        <Header {...pageProps} />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -11,6 +11,7 @@
   --Primary-clr-Rust: #d97d54;
   --Primary-clr-Drab: #324755;
   --Primary-clr-Danger: #d95454;
+  --Primary-clr-Setup: #ECEFF0;
 
   --Secondary-clr-Ice: #f0f3f4;
   --Secondary-clr-Fossil: #c8d1d3;
@@ -19,6 +20,10 @@
   --Typografy-clr-Onyx: #1b1c20;
   --Typografy-clr-Slate: #6e8ca0;
   --Typografy-clr-Snow: #ffffff;
+
+  --btn-clr-border: #c8d1d3;
+
+  --Secondary-ff: Rift Soft;
 }
 
 .Primary__heading,
@@ -70,4 +75,13 @@
 .Message__time_stamp{
     font-weight: 200;
     font-size: 12pt;
+}
+
+.wrapper {
+  height: calc(100vh - 120px);
+  /* min-height: 800px; */
+}
+
+.spc-clr-h1 {
+  color: var(--Primary-clr-Sage);
 }
