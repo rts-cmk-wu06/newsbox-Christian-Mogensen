@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Timeleft from "../components/Timeleft";
 import Footer from "../components/Footer";
 import "../styles/header.css";
@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <div className="sm:max-w-md">
         <Timeleft />
-        <Header {...pageProps} />
         <Component {...pageProps} />
         <Footer />
       </div>
