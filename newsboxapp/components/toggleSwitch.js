@@ -1,14 +1,27 @@
+import { useState } from "react";
 
-import {useState} from 'react'
-
-const ToggleSwitch = () => {
+const ToggleSwitch = (props) => {
   const [isToggled, setIsToggled] = useState(false);
-  const onToggle = () => setIsToggled(!isToggled);
+  // if(isToggled){
+  //   localStorage.setItem('category', props.section)
+  // }
+  // if(!isToggled){
+  //   localStorage.removeItem('category', props.section)
+  // }
+  const onToggle = () => {
+    setIsToggled(!isToggled);
+  };
+  // console.log(localStorage);
   return (
-    <label className="toggle-switch">
-      <input type="checkbox" checked={isToggled} onChange={onToggle} />
-      <span className="switch" />
-    </label>
+    <>
+      <div className="last-of-type:border-none border-b border-gray-200 flex justify-between p-6 items-center">
+        <h3 className="Section__heading uppercase">{props.section}</h3>
+        <label className="toggle-switch">
+          <input type="checkbox" checked={isToggled} onChange={onToggle} />
+          <span className="switch" />
+        </label>
+      </div>
+    </>
   );
 };
 

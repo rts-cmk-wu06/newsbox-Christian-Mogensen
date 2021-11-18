@@ -2,8 +2,9 @@ import ToggleSwitch from "../components/toggleSwitch";
 import Link from 'next/link'
 
 
-const setting = () => {
+const setting = (props) => {
 
+  
   return (
     <>
 
@@ -37,31 +38,17 @@ const setting = () => {
             <h2 className="Sub__title">Categories</h2>
           </header>
           <div className="rounded-3xl bg-[color:var(--Typografy-clr-Snow)] shadow-lg">
-            <div className="flex border-b justify-between p-6 items-center border-[color:var(--Primary-clr-Setup)]">
-              <h3 className="Section__heading uppercase">Europe</h3>
 
-              <ToggleSwitch />
-            </div>
-            <div className="flex border-b justify-between p-6 items-center border-[color:var(--Primary-clr-Setup)]">
-              <h3 className="Section__heading uppercase">health</h3>
+              <ToggleSwitch section='Europe' />
 
-              <ToggleSwitch />
-            </div>
-            <div className="flex border-b justify-between p-6 items-center border-[color:var(--Primary-clr-Setup)]">
-              <h3 className="Section__heading uppercase">sport</h3>
+              <ToggleSwitch section='Health' />
 
-              <ToggleSwitch />
-            </div>
-            <div className="flex border-b justify-between p-6 items-center border-[color:var(--Primary-clr-Setup)]">
-              <h3 className="Section__heading uppercase">business</h3>
+              <ToggleSwitch section='Sport' />
 
-              <ToggleSwitch />
-            </div>
-            <div className="flex justify-between p-6 items-center">
-              <h3 className="Section__heading uppercase">travel</h3>
+              <ToggleSwitch section='Business' />
 
-              <ToggleSwitch />
-            </div>
+              <ToggleSwitch section='Travel' />
+
           </div>
           <div className="flex justify-center">
             <button className="Secondary__font Secondary__font_hover px-8 py-2 border border-[color:var(--Secondary-clr-Fossil)] mt-10 rounded-3xl hover:bg-black hover:text-white] transition-all hover:border-transparent">
@@ -71,6 +58,7 @@ const setting = () => {
         </main>
       </div>
     </>
+
   );
 };
 
