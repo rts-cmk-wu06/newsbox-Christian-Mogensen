@@ -1,11 +1,11 @@
 import Link from 'next/link'
+import Header from '../components/Header';
 
 const archive = () => {
   return (
     <>
       {/* // Header -> need to look into how to change props dynamically */}
-      <header className="sticky top-0 header h-[60px] flex items-center shadow-sm bg-white  border-b w-full">
-        <nav className="p-5 items-center grid Header__grid_column w-full place-self-center">
+        <Header>
         <Link href='/' exact>
           <a>
           <div className="w-full h-full flex justify-start items-center">
@@ -39,8 +39,7 @@ const archive = () => {
               />
             </svg>
           </div></a></Link>
-        </nav>
-      </header>
+          </Header>
       {/* // content loaded from fetch */}
     </>
   );

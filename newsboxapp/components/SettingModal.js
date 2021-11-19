@@ -1,21 +1,29 @@
 import ToggleSwitch from "../components/toggleSwitch";
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import {useState} from 'react'
+import ButtonSetting from "./ButtonSetting";
+import Footer from "./Footer";
 
 
-const setting = (props) => {
+const SettingModal = (props) => {
   const router = useRouter()
-  
+  const [isSetting, setIsSetting] = useState(false)
+    function showSetting(e){
+        
+        setIsSetting( !isSetting )
+    
+    }
   return (
     <>
+<ButtonSetting onClick={(e)=>showSetting()} />
 
-
-      <div className="wrapper">
+    {<div className={`modal z-[51] w-full absolute left-0 ${!isSetting ? 'top-[-120vh]' : 'top-0'} max-h-screen overflow-y-auto`}>
     {/* Header */}
-      <header className="z-50 sticky top-0 header h-[60px] flex items-center shadow-sm bg-white  border-b w-full">
+      <header className="z-50 sticky header h-[60px] flex items-center shadow-sm bg-white  border-b w-full">
         <nav className="p-5 items-center grid Header__grid_column w-full place-self-center">
           {/* <Link href='/'><a> */}
-          <button onClick={() => router.back()}>
+          <button onClick={() => setIsSetting(false)}>
             <div className="w-full h-full flex justify-start items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +45,7 @@ const setting = (props) => {
         </nav>
       </header>
       {/* content */}
-        <main className="p-4 flex flex-col justify-between bg-[color:var(--Primary-clr-Setup)] wrapper">
+        <main className="h-full p-4 flex flex-col justify-between bg-[color:var(--Primary-clr-Setup)] wrapper">
           <header className="Header__grafik-element text-center m-8 leading-tight">
             <h2 className="Primary__heading spc-clr-h1">Manage</h2>
             <h2 className="Sub__title">Categories</h2>
@@ -61,10 +69,11 @@ const setting = (props) => {
             </button>
           </div>
         </main>
-      </div>
+        <Footer />
+      </div>}
     </>
 
   );
 };
 
-export default setting;
+export default SettingModal;
