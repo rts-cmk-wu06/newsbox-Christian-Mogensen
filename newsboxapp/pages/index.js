@@ -7,6 +7,7 @@ import AccordionButton from "../components/AccordionButton";
 import ButtonSetting from "../components/ButtonSetting";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
 // import Image from 'next/image'
 const apiKey = process.env.NYT_API_KEY;
@@ -119,6 +120,7 @@ console.log(masterArray[0].dataArr);
           <SettingModal />
         </Header>
 
+        <Searchbar />
         {/* // content loaded from fetch */}
         <div>
         {masterArray.map((accordion) => (

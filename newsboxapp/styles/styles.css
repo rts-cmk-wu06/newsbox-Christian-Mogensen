@@ -112,3 +112,9 @@
 .borderBrmv:hover {
   background-color: 1px solid red;
 }
+
+.searchbar{
+  font-size: 15pt;
+  font-weight: 200;
+  color: var(--Typografy-clr-Slate)
+}
