@@ -10,7 +10,6 @@ const SettingModal = (props) => {
   const router = useRouter()
   const [isSetting, setIsSetting] = useState(false)
     function showSetting(e){
-        
         setIsSetting( !isSetting )
     
     }
@@ -52,13 +51,13 @@ const SettingModal = (props) => {
           </header>
           <div className="rounded-3xl bg-[color:var(--Typografy-clr-Snow)] shadow-lg">
 
-              <ToggleSwitch section='Europe' />
+              <ToggleSwitch section='Business' />
+
+              <ToggleSwitch section='Automobile' />
 
               <ToggleSwitch section='Health' />
 
-              <ToggleSwitch section='Sport' />
-
-              <ToggleSwitch section='Business' />
+              <ToggleSwitch section='Sports' />
 
               <ToggleSwitch section='Travel' />
 
