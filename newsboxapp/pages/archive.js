@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Searchbar from '../components/Searchbar';
 
 const archive = () => {
   return (
@@ -40,7 +42,11 @@ const archive = () => {
             </svg>
           </div></a></Link>
           </Header>
+          <Searchbar />
+
       {/* // content loaded from fetch */}
+
+      <Footer />
     </>
   );
 };
