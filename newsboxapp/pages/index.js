@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
+import ToggleSwitch from "../components/toggleSwitch";
 // import Image from 'next/image'
 const apiKey = process.env.NYT_API_KEY;
 const apiAutoMobileUrl =
@@ -52,6 +53,7 @@ export default function Home({
   dataSport,
   props,
   isSetting,
+  clicked,
 }) {
   const business = dataBusiness.results;
   const automobile = dataAutomobile.results;
@@ -126,38 +128,39 @@ export default function Home({
       <div>
         {masterArray.map((accordion, index) => (
           <>
-            <div key={accordion.title}
-              className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}>
+            <div
+              key={accordion.title}
+              className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}
+            >
               <Accordion />
               <h2 className="Section__heading uppercase">{accordion.title}</h2>
+
               <AccordionButton />
             </div>
             <div className="flex justify-center flex-col">
-              {accordion.dataArr.map((article, index) => (
-                <a
-                  key={index}
-                  target="_blank"
-                  href={article.url}
-                >
-                  <article className="flex items-center border-b border-[color:var(--btn-clr-border)]">
-                    <figure className="cover-img">
-                      <img
-                        className="article-img"
-                        src={`${article.multimedia[0].url}`}
-                        alt={article.title + " image"}
-                      />
-                    </figure>
-                    <div>
-                      <h2 className="Card__title">
-                        {truncate(article.title, 20, "...")}
-                      </h2>
-                      <p className="Message__time_stamp">
-                        {truncate(article.abstract, 40, "...")}
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              ))}
+              {clicked == index
+                ? accordion.dataArr.map((article, index) => (
+                    <a key={index} target="_blank" href={article.url}>
+                      <article className="flex items-center border-b border-[color:var(--btn-clr-border)]">
+                        <figure className="cover-img">
+                          <img
+                            className="article-img"
+                            src={`${article.multimedia[0].url}`}
+                            alt={article.title + " image"}
+                          />
+                        </figure>
+                        <div>
+                          <h2 className="Card__title">
+                            {truncate(article.title, 20, "...")}
+                          </h2>
+                          <p className="Message__time_stamp">
+                            {truncate(article.abstract, 40, "...")}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  ))
+                : null}
             </div>
           </>
         ))}
