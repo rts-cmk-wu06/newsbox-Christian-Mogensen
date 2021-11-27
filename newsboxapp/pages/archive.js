@@ -2,8 +2,11 @@ import Link from 'next/link'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Searchbar from '../components/Searchbar';
+import { useContext } from 'react';
+import { LocalStorageContext } from '../components/localStorageContext';
 
 const archive = () => {
+  const {isToggled, setIsToggled} = useContext(LocalStorageContext)
   return (
     <>
       {/* // Header -> need to look into how to change props dynamically */}

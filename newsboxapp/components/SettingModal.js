@@ -51,11 +51,11 @@ const SettingModal = (props, {section}) => {
           </header>
           <div className="rounded-3xl bg-[color:var(--Typografy-clr-Snow)] shadow-lg">
 
-              <ToggleSwitch section='business' />
-              <ToggleSwitch section='automobile' />
-              <ToggleSwitch section='health' />
-              <ToggleSwitch section='sports' />
-              <ToggleSwitch section='travel' />
+              <ToggleSwitch toggleValue='business' />
+              <ToggleSwitch toggleValue='automobile' />
+              <ToggleSwitch toggleValue='health' />
+              <ToggleSwitch toggleValue='sports' />
+              <ToggleSwitch toggleValue='travel' />
           </div>
           <div className="flex justify-center">
             <button className="Secondary__font Secondary__font_hover px-8 py-2 border border-[color:var(--Secondary-clr-Fossil)] mt-10 rounded-3xl hover:bg-black hover:text-white] transition-all hover:border-transparent">

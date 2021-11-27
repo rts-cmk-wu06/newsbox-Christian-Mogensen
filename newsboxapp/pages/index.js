@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Accordion from "../components/accordion";
 import AccordionButton from "../components/AccordionButton";
 import ButtonSetting from "../components/ButtonSetting";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { LocalStorageContext } from "../components/localStorageContext";
 import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
 import ToggleSwitch from "../components/toggleSwitch";
@@ -51,50 +52,65 @@ export default function Home({
   dataHealth,
   dataTravel,
   dataSport,
-  props,
-  isSetting,
-  clicked,
+
 }) {
+  const {isToggled} = useContext(LocalStorageContext)
+
+
+
+  const truncate = (str, max, suffix) =>
+  str.length < max
+  ? str
+  : `${str.substr(
+    0,
+    str.substr(0, max - suffix.length).lastIndexOf(" ")
+    )}${suffix}`;
+
   const business = dataBusiness.results;
   const automobile = dataAutomobile.results;
   const health = dataHealth.results;
   const travel = dataTravel.results;
   const sport = dataSport.results;
   const masterArray = [];
-
   const [filterBusiness, setFilterBusiness] = useState([]);
   const [filterAutomobile, setFilterAutomobile] = useState([]);
   const [filterHealth, setFilterHealth] = useState([]);
   const [filterTravel, setFilterTravel] = useState([]);
   const [filterSport, setFilterSport] = useState([]);
+
+  const [accordionBusiness, setAccordionBusiness] = useState(false)
   useEffect(() => {
-    setFilterBusiness(business.filter((item) => item.section == "business"));
+    setFilterBusiness(business.filter((item) => item.section == "business" && !!item.multimedia));
+
     setFilterAutomobile(
-      automobile.filter((item) => item.section == "automobiles")
-    );
-    setFilterHealth(health.filter((item) => item.section == "health"));
-    setFilterTravel(travel.filter((item) => item.section == "travel"));
-    setFilterSport(sport.filter((item) => item.section == "sports"));
-  }, []);
-  masterArray.push({ title: "business", dataArr: filterBusiness });
-  masterArray.push({ title: "automobile", dataArr: filterAutomobile });
-  masterArray.push({ title: "health", dataArr: filterHealth });
-  masterArray.push({ title: "travel", dataArr: filterTravel });
-  masterArray.push({ title: "sport", dataArr: filterSport });
+      automobile.filter((item) => item.section == "automobiles" && !!item.multimedia)
+      );
+      setFilterHealth(health.filter((item) => item.section == "health" && !!item.multimedia));
+      setFilterTravel(travel.filter((item) => item.section == "travel" && !!item.multimedia));
+      setFilterSport(sport.filter((item) => item.section == "sports" && !!item.multimedia));
+      console.log(filterBusiness)
+    }, []);
+    masterArray.push({ title: "Business", dataArr: filterBusiness });
+    masterArray.push({ title: "Automobile", dataArr: filterAutomobile });
+    masterArray.push({ title: "Health", dataArr: filterHealth });
+    masterArray.push({ title: "Travel", dataArr: filterTravel });
+    masterArray.push({ title: "Sport", dataArr: filterSport });
 
-  const truncate = (str, max, suffix) =>
-    str.length < max
-      ? str
-      : `${str.substr(
-          0,
-          str.substr(0, max - suffix.length).lastIndexOf(" ")
-        )}${suffix}`;
 
-  const router = useRouter();
+      const [accordionBtnToggle, setAccordionBtnToggle] =
+      useState({
+        business: false,
+        automobile: false,
+        health: false,
+        travel: false,
+        sports: false,
+      });
 
-  return (
+
+
+      return (
     <>
-      {/* // Header -> need to look into how to change props dynamically */}
+      
       <Header>
         <Link href="/archive" exact>
           <a>
@@ -120,26 +136,40 @@ export default function Home({
         </Link>
         <h1 className="Section__heading justify-self-center">Newsbox</h1>
         {/* <ButtonSetting /> */}
-        <SettingModal />
+        <SettingModal  />
       </Header>
 
       <Searchbar />
       {/* // content loaded from fetch */}
       <div>
-        {masterArray.map((accordion, index) => (
-          <>
+        {
+       
+        masterArray.map((accordion) => 
+          {return isToggled[accordion.title.toLowerCase()] &&
+          <div key={accordion.title}>
+          
             <div
-              key={accordion.title}
+              
               className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}
             >
-              <Accordion />
-              <h2 className="Section__heading uppercase">{accordion.title}</h2>
 
-              <AccordionButton />
+              <Accordion />
+              <h2 className="Section__heading uppercase">{accordion.title} </h2>
+              <AccordionButton
+               isToggled={accordionBtnToggle[accordion.title.toLowerCase()]}
+              onClick={()=>{
+                // console.log(accordionBtnToggle[accordion.title.toLowerCase()])
+                setAccordionBtnToggle({
+                  ...accordionBtnToggle,
+                  [accordion.title.toLowerCase()]:
+                  !accordionBtnToggle[accordion.title.toLowerCase()]
+                })}
+              } />
             </div>
             <div className="flex justify-center flex-col">
-              {clicked == index
-                ? accordion.dataArr.map((article, index) => (
+              {
+              accordionBtnToggle[accordion.title.toLowerCase()] ? 
+              accordion.dataArr.map((article, index) => (
                     <a key={index} target="_blank" href={article.url}>
                       <article className="flex items-center border-b border-[color:var(--btn-clr-border)]">
                         <figure className="cover-img">
@@ -160,10 +190,12 @@ export default function Home({
                       </article>
                     </a>
                   ))
-                : null}
+                : null
+                }
             </div>
-          </>
-        ))}
+          </div>
+        }
+        )}
       </div>
       <Footer />
     </>

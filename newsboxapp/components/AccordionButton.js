@@ -1,18 +1,9 @@
-import { useState } from "react";
 
-const AccordionButton = (index) => {
-  const [clicked, setClicked] = useState(false)
+const AccordionButton = ({onClick, isToggled}) => {
 
-  const accordionToggle = index  => {
-    if(clicked === index){
-      console.log('test');
-      return setClicked(true)
-    }
-    setClicked(index)
-  }
     return ( 
-        <div onClick={()=> accordionToggle(index)} className={`ml-auto mr-4 flex w-10 h-10 scale-100 rounded-full items-center justify-center active:bg-gray-200 active:transition active:scale-150 ${clicked === index ? 'transform:rotate(0deg)': 'transform:rotate(45deg)'}`}>
-        <button>
+      
+        <button className={`ml-auto mr-4 flex w-10 h-10 scale-100 rounded-full items-center justify-center active:bg-gray-200 active:transition active:scale-150 ${ isToggled ? 'rotate-0': '-rotate-90'}`} onClick={onClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -28,7 +19,7 @@ const AccordionButton = (index) => {
             />
           </svg>
         </button>
-      </div>
+      
      );
 }
  

@@ -1,28 +1,28 @@
-import { useState } from "react";
-const lcsNArr = [];
-const ToggleSwitch = ({ section }) => {
-  const [isToggled, setIsToggled] = useState(false);
+import { useEffect, useState, useContext } from "react";
+import { LocalStorageContext } from "./localStorageContext";
 
-  if (isToggled == true) {
-    lcsNArr.push(section);
-    localStorage.setItem("category", JSON.stringify(lcsNArr));
-  }
-  if (!isToggled) {
-    lcsNArr = JSON.parse(localStorage.getItem("category"));
-    lcsNArr.splice(section, 1);
-    localStorage.setItem("category", JSON.stringify(lcsNArr));
-  }
 
-  const onToggle = () => {
-    setIsToggled(!isToggled);
-  };
+
+const ToggleSwitch = ({toggleValue = 'toggle' }) => {
+
+  const {isToggled,setIsToggled} = useContext(LocalStorageContext)
+
+
+const toggle = () => {
+    setIsToggled({
+      ...isToggled,
+      [toggleValue]:!isToggled[toggleValue]
+    }
+      )
+}
+
 
   return (
     <>
       <div className="last-of-type:border-none border-b border-gray-200 flex justify-between p-6 items-center">
-        <h3 className="Section__heading uppercase">{section}</h3>
+        <h3 className="Section__heading uppercase">{toggleValue} {isToggled[toggleValue]?.toString() || 'false'}</h3>
         <label className="toggle-switch">
-          <input type="checkbox" checked={isToggled} onChange={onToggle} />
+          <input type="checkbox" checked={isToggled[toggleValue]||false} onChange={toggle} />
           <span className="switch" />
         </label>
       </div>
