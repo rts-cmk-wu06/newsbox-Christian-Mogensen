@@ -1,10 +1,17 @@
 import { useState } from "react";
+import {motion} from 'framer-motion'
 const ButtonSetting = ({onClick}) => {
     
 
 
     return (
-  <button onClick={onClick}>
+  <motion.button 
+
+  initial={{x:10, opacity:0}}
+  animate={{x:0, opacity:1}}
+  transition={{ delay: 0.125 }}
+  
+  onClick={onClick}>
     <div className="w-full h-full flex justify-end items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +28,7 @@ const ButtonSetting = ({onClick}) => {
         />
       </svg>
     </div>
-  </button>
+  </motion.button>
   )
 };
 export default ButtonSetting;

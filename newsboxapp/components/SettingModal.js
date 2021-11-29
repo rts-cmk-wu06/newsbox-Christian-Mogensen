@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import {useState} from 'react'
 import ButtonSetting from "./ButtonSetting";
 import Footer from "./Footer";
+import {motion} from 'framer-motion'
 
 
 const SettingModal = (props, {section}) => {
@@ -15,14 +16,19 @@ const SettingModal = (props, {section}) => {
     }
   return (
     <>
-<ButtonSetting onClick={(e)=>showSetting()} />
+<ButtonSetting onClick={()=>showSetting()} />
 
     {<div className={`modal z-[51] w-full absolute left-0 ${!isSetting ? 'top-[-120vh]' : 'top-0'} max-h-screen overflow-y-auto`}>
     {/* Header */}
       <header className="z-50 sticky header h-[60px] flex items-center shadow-sm bg-white  border-b w-full">
         <nav className="p-5 items-center grid Header__grid_column w-full place-self-center">
           {/* <Link href='/'><a> */}
-          <button onClick={() => setIsSetting(false)}>
+          <motion.button
+                                  initial={{x:10, opacity:0}}
+                                  animate={{x:0, opacity:1}}
+                                  transition={{ delay: 0.3 }}
+
+          onClick={() => setIsSetting(false)}>
             <div className="w-full h-full flex justify-start items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +43,14 @@ const SettingModal = (props, {section}) => {
               />
             </svg>
           </div>
-          </button>
+          </motion.button>
           {/* </a>
           </Link> */}
-          <h1 className="Section__heading justify-self-center">News setting</h1>
+          <motion.h1 
+                                  initial={{opacity:0}}
+                                  animate={{opacity:1}}
+                                  transition={{ delay: 0.6 }}
+          className="Section__heading justify-self-center">News setting</motion.h1>
         </nav>
       </header>
       {/* content */}

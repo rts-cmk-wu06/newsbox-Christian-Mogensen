@@ -1,6 +1,12 @@
+import {motion}from 'framer-motion'
 const Searchbar = () => {
   return (
-    <aside className="relative h-[70px] bg-gray-50">
+    <motion.aside
+    initial={{y:-70}}
+  animate={{y:0}}
+  transition={{delay:0.7}}
+    
+    className="relative h-[70px] bg-gray-50">
       <div className="w-full p-5 h-full flex items-center">
         <input
           className=" w-full bg-[#F0F3F4] searchbar py-2 rounded px-5"
@@ -28,7 +34,7 @@ const Searchbar = () => {
           </svg>
         </div>
       </div>
-    </aside>
+    </motion.aside>
   );
 };
 

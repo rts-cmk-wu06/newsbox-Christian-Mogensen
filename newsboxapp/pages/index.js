@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import Accordion from "../components/accordion";
@@ -52,19 +53,16 @@ export default function Home({
   dataHealth,
   dataTravel,
   dataSport,
-
 }) {
-  const {isToggled} = useContext(LocalStorageContext)
-
-
+  const { isToggled } = useContext(LocalStorageContext);
 
   const truncate = (str, max, suffix) =>
-  str.length < max
-  ? str
-  : `${str.substr(
-    0,
-    str.substr(0, max - suffix.length).lastIndexOf(" ")
-    )}${suffix}`;
+    str.length < max
+      ? str
+      : `${str.substr(
+          0,
+          str.substr(0, max - suffix.length).lastIndexOf(" ")
+        )}${suffix}`;
 
   const business = dataBusiness.results;
   const automobile = dataAutomobile.results;
@@ -78,44 +76,72 @@ export default function Home({
   const [filterTravel, setFilterTravel] = useState([]);
   const [filterSport, setFilterSport] = useState([]);
 
-  const [accordionBusiness, setAccordionBusiness] = useState(false)
+  // const [accordionBusiness, setAccordionBusiness] = useState(false);
   useEffect(() => {
-    setFilterBusiness(business.filter((item) => item.section == "business" && !!item.multimedia));
+    setFilterBusiness(
+      business.filter((item) => item.section == "business" && !!item.multimedia)
+    );
 
     setFilterAutomobile(
-      automobile.filter((item) => item.section == "automobiles" && !!item.multimedia)
-      );
-      setFilterHealth(health.filter((item) => item.section == "health" && !!item.multimedia));
-      setFilterTravel(travel.filter((item) => item.section == "travel" && !!item.multimedia));
-      setFilterSport(sport.filter((item) => item.section == "sports" && !!item.multimedia));
-      console.log(filterBusiness)
-    }, []);
-    masterArray.push({ title: "Business", dataArr: filterBusiness });
-    masterArray.push({ title: "Automobile", dataArr: filterAutomobile });
-    masterArray.push({ title: "Health", dataArr: filterHealth });
-    masterArray.push({ title: "Travel", dataArr: filterTravel });
-    masterArray.push({ title: "Sport", dataArr: filterSport });
+      automobile.filter(
+        (item) => item.section == "automobiles" && !!item.multimedia
+      )
+    );
+    setFilterHealth(
+      health.filter((item) => item.section == "health" && !!item.multimedia)
+    );
+    setFilterTravel(
+      travel.filter((item) => item.section == "travel" && !!item.multimedia)
+    );
+    setFilterSport(
+      sport.filter((item) => item.section == "sports" && !!item.multimedia)
+    );
+    console.log(filterBusiness);
+  }, []);
+  masterArray.push({ title: "Business", dataArr: filterBusiness });
+  masterArray.push({ title: "Automobile", dataArr: filterAutomobile });
+  masterArray.push({ title: "Health", dataArr: filterHealth });
+  masterArray.push({ title: "Travel", dataArr: filterTravel });
+  masterArray.push({ title: "Sports", dataArr: filterSport });
 
+  const [accordionBtnToggle, setAccordionBtnToggle] = useState({
+    business: false,
+    automobile: false,
+    health: false,
+    travel: false,
+    sports: false,
+  });
 
-      const [accordionBtnToggle, setAccordionBtnToggle] =
-      useState({
-        business: false,
-        automobile: false,
-        health: false,
-        travel: false,
-        sports: false,
-      });
-
-
-
-      return (
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delay:0.125,
+        delayChildren: 0.125,
+        staggerChildren: 0.125
+      }
+    }
+  }
+  
+  const item = {
+    hidden: { opacity: 0, x: -50 },
+    show: { opacity: 1, x:0 },
+    exit:{x:-20, opacity:0}
+  }
+const [isAcc, setAcc] = useState(false)
+  return (
     <>
-      
       <Header>
         <Link href="/archive" exact>
           <a>
             {/* <button onClick={() => router.back()}> */}
-            <div className="w-full h-full flex justify-start items-center">
+            <motion.div
+              initial={{ x: -10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.125 }}
+              className="w-full h-full flex justify-start items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -130,73 +156,94 @@ export default function Home({
                   d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
                 />
               </svg>
-            </div>
+            </motion.div>
             {/* </button> */}
           </a>
         </Link>
-        <h1 className="Section__heading justify-self-center">Newsbox</h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="Section__heading justify-self-center"
+        >
+          Newsbox
+        </motion.h1>
         {/* <ButtonSetting /> */}
-        <SettingModal  />
+        <SettingModal />
       </Header>
 
       <Searchbar />
       {/* // content loaded from fetch */}
-      <div>
-        {
-       
-        masterArray.map((accordion) => 
-          {return isToggled[accordion.title.toLowerCase()] &&
-          <div key={accordion.title}>
-          
-            <div
-              
-              className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}
-            >
+      <motion.div
+      >
+        <AnimatePresence>
+          {masterArray.map((accordion, index) => {
+            return (
+              isToggled[accordion.title.toLowerCase()] && (
+                <motion.div  transition={{ ease: "easeOut", duration: 2 }}>
+                  <motion.div className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}>
+                    <Accordion />
+                    <h2 className="Section__heading uppercase">
+                      {accordion.title}{" "}
+                    </h2>
+                    <AccordionButton
+                      isToggled={
+                        accordionBtnToggle[accordion.title.toLowerCase()]
+                      }
+                      onClick={() => {
+                        setAcc(!isAcc)
+                        setAccordionBtnToggle({
+                          ...accordionBtnToggle,
+                          [accordion.title.toLowerCase()]:
+                            !accordionBtnToggle[accordion.title.toLowerCase()],
+                        });
+                      }}
+                    />
+                  </motion.div>
+                    <AnimatePresence>
+                  <motion.ul variants={container}
+                animate={isAcc ? "show" : "hidden"}
+                initial={'hidden'}
+                key={accordion.title} className="flex justify-center flex-col">
 
-              <Accordion />
-              <h2 className="Section__heading uppercase">{accordion.title} </h2>
-              <AccordionButton
-               isToggled={accordionBtnToggle[accordion.title.toLowerCase()]}
-              onClick={()=>{
-                // console.log(accordionBtnToggle[accordion.title.toLowerCase()])
-                setAccordionBtnToggle({
-                  ...accordionBtnToggle,
-                  [accordion.title.toLowerCase()]:
-                  !accordionBtnToggle[accordion.title.toLowerCase()]
-                })}
-              } />
-            </div>
-            <div className="flex justify-center flex-col">
-              {
-              accordionBtnToggle[accordion.title.toLowerCase()] ? 
-              accordion.dataArr.map((article, index) => (
-                    <a key={index} target="_blank" href={article.url}>
-                      <article className="flex items-center border-b border-[color:var(--btn-clr-border)]">
-                        <figure className="cover-img">
-                          <img
-                            className="article-img"
-                            src={`${article.multimedia[0].url}`}
-                            alt={article.title + " image"}
-                          />
-                        </figure>
-                        <div>
-                          <h2 className="Card__title">
-                            {truncate(article.title, 20, "...")}
-                          </h2>
-                          <p className="Message__time_stamp">
-                            {truncate(article.abstract, 40, "...")}
-                          </p>
-                        </div>
-                      </article>
-                    </a>
-                  ))
-                : null
-                }
-            </div>
-          </div>
-        }
-        )}
-      </div>
+                    {accordionBtnToggle[accordion.title.toLowerCase()]
+                      ? accordion.dataArr.map((article, index) => (
+                          <a key={index} target="_blank" href={article.url}>
+                            <motion.li
+                              variants={item}
+                              
+                              className="flex items-center border-b border-[color:var(--btn-clr-border)]"
+                            >
+                              <figure className="cover-img">
+                                <img
+                                  className="article-img"
+                                  src={`${article.multimedia[0].url}`}
+                                  alt={article.title + " image"}
+                                  loading="lazy"
+                                  width="70px"
+                                  height="70px"
+                                />
+                              </figure>
+                              <div>
+                                <h2 className="Card__title">
+                                  {truncate(article.title, 20, "...")}
+                                </h2>
+                                <p className="Message__time_stamp">
+                                  {truncate(article.abstract, 40, "...")}
+                                </p>
+                              </div>
+                            </motion.li>
+                          </a>
+                        ))
+                      : null}
+                  </motion.ul>
+                          </AnimatePresence>
+                </motion.div>
+              )
+            );
+          })}
+        </AnimatePresence>
+      </motion.div>
       <Footer />
     </>
   );
