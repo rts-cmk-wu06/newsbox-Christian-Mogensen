@@ -1,6 +1,6 @@
 const Accordion = () => {
     return ( 
-        <header className="ml-4 mr-3 h-10 w-10 flex justify-center items-center bg-white shadow-lg rounded-full ">
+        <header className="ml-4 mr-3 h-10 w-10 flex justify-center items-center shadow-lg rounded-full bg-dark-secondary-one dark:bg-dark-primary-three">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={18.914}

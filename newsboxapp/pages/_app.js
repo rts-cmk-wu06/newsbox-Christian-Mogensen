@@ -24,6 +24,17 @@ function MyApp({ Component, pageProps }) {
 }, [isToggled])
 }
 
+
+if (typeof window !== "undefined") {
+const root = window.document.documentElement
+let theme;
+if (localStorage) {
+theme = localStorage.getItem("theme")
+root.classList.add(localStorage.theme);
+}
+}
+
+
   return (
     <>
       <div className={`sm:max-w-[420px]`}>

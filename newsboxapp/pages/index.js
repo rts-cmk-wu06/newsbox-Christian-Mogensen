@@ -12,6 +12,11 @@ import { LocalStorageContext } from "../components/localStorageContext";
 import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
 import ToggleSwitch from "../components/toggleSwitch";
+
+
+
+
+
 // import Image from 'next/image'
 const apiKey = process.env.NYT_API_KEY;
 const apiAutoMobileUrl =
@@ -53,7 +58,18 @@ export default function Home({
   dataHealth,
   dataTravel,
   dataSport,
+  theme
 }) {
+  useEffect(()=>{
+    if (typeof window !== "undefined") {
+      const root = window.document.documentElement
+      let theme;
+      if (localStorage) {
+      theme = localStorage.getItem("theme")
+      root.classList.add(localStorage.theme);
+      }
+      }
+    },[theme])
   const { isToggled } = useContext(LocalStorageContext);
 
   const truncate = (str, max, suffix) =>
@@ -75,8 +91,9 @@ export default function Home({
   const [filterHealth, setFilterHealth] = useState([]);
   const [filterTravel, setFilterTravel] = useState([]);
   const [filterSport, setFilterSport] = useState([]);
-
-  // const [accordionBusiness, setAccordionBusiness] = useState(false);
+  
+  const [isAcc, setAcc] = useState(false);
+  
   useEffect(() => {
     setFilterBusiness(
       business.filter((item) => item.section == "business" && !!item.multimedia)
@@ -117,21 +134,21 @@ export default function Home({
     show: {
       opacity: 1,
       transition: {
-        delay:0.125,
+        delay: 0.125,
         delayChildren: 0.125,
-        staggerChildren: 0.125
-      }
-    }
-  }
-  
+        staggerChildren: 0.125,
+      },
+    },
+  };
+
   const item = {
     hidden: { opacity: 0, x: -50 },
-    show: { opacity: 1, x:0 },
-    exit:{x:-20, opacity:0}
-  }
-const [isAcc, setAcc] = useState(false)
+    show: { opacity: 1, x: 0 },
+    exit: { x: -20, opacity: 0 },
+  };
   return (
-    <>
+    <div>
+    <div className='dark:bg-dark-primary-one overflow-x-hidden'>
       <Header>
         <Link href="/archive" exact>
           <a>
@@ -140,14 +157,14 @@ const [isAcc, setAcc] = useState(false)
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.125 }}
-              className="w-full h-full flex justify-start items-center"
+              className=" w-full h-full flex justify-start items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke={'currentColor'}
               >
                 <path
                   strokeLinecap="round"
@@ -164,7 +181,7 @@ const [isAcc, setAcc] = useState(false)
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="Section__heading justify-self-center"
+          className="Section__heading justify-self-center "
         >
           Newsbox
         </motion.h1>
@@ -174,16 +191,21 @@ const [isAcc, setAcc] = useState(false)
 
       <Searchbar />
       {/* // content loaded from fetch */}
-      <motion.div
-      >
+      <motion.main className="min-h-[calc(100vh-190px)] ">
         <AnimatePresence>
           {masterArray.map((accordion, index) => {
             return (
               isToggled[accordion.title.toLowerCase()] && (
-                <motion.div  transition={{ ease: "easeOut", duration: 2 }}>
-                  <motion.div className={`contcat flex items-center bg-[color:var(--Secondary-clr-Ice)] h-[60px] border-b`}>
+                <motion.div
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 1, ease: "easeOut", duration: 0.125 }}
+                >
+                  <motion.div
+                    className={`contcat flex items-center bg-secondary-ice dark:bg-dark-primary-two dark:text-dark-secondary-three h-[60px] border-b dark:border-dark-primary-one `}
+                  >
                     <Accordion />
-                    <h2 className="Section__heading uppercase">
+                    <h2 className="Section__heading uppercase dark:text-darkTsecondaryTwo">
                       {accordion.title}{" "}
                     </h2>
                     <AccordionButton
@@ -191,7 +213,7 @@ const [isAcc, setAcc] = useState(false)
                         accordionBtnToggle[accordion.title.toLowerCase()]
                       }
                       onClick={() => {
-                        setAcc(!isAcc)
+                        setAcc(!isAcc);
                         setAccordionBtnToggle({
                           ...accordionBtnToggle,
                           [accordion.title.toLowerCase()]:
@@ -200,51 +222,53 @@ const [isAcc, setAcc] = useState(false)
                       }}
                     />
                   </motion.div>
-                    <AnimatePresence>
-                  <motion.ul variants={container}
-                animate={isAcc ? "show" : "hidden"}
-                initial={'hidden'}
-                key={accordion.title} className="flex justify-center flex-col">
-
-                    {accordionBtnToggle[accordion.title.toLowerCase()]
-                      ? accordion.dataArr.map((article, index) => (
-                          <a key={index} target="_blank" href={article.url}>
-                            <motion.li
-                              variants={item}
-                              
-                              className="flex items-center border-b border-[color:var(--btn-clr-border)]"
-                            >
-                              <figure className="cover-img">
-                                <img
-                                  className="article-img"
-                                  src={`${article.multimedia[0].url}`}
-                                  alt={article.title + " image"}
-                                  loading="lazy"
-                                  width="70px"
-                                  height="70px"
-                                />
-                              </figure>
-                              <div>
-                                <h2 className="Card__title">
-                                  {truncate(article.title, 20, "...")}
-                                </h2>
-                                <p className="Message__time_stamp">
-                                  {truncate(article.abstract, 40, "...")}
-                                </p>
-                              </div>
-                            </motion.li>
-                          </a>
-                        ))
-                      : null}
-                  </motion.ul>
-                          </AnimatePresence>
+                  <AnimatePresence>
+                    <motion.ul
+                      variants={container}
+                      animate={isAcc ? "show" : "hidden"}
+                      initial={"hidden"}
+                      key={accordion.title}
+                      className="flex justify-center flex-col"
+                    >
+                      {accordionBtnToggle[accordion.title.toLowerCase()]
+                        ? accordion.dataArr.map((article, index) => (
+                            <a key={index} target="_blank" href={article.url}>
+                              <motion.li
+                                variants={item}
+                                className="flex items-center border-b border-btn-borderClr dark:border- dark:border-dark-primary-four dark:text-dark-secondary-three dark:bg-dark-primary-one"
+                              >
+                                <figure className="cover-img">
+                                  <img
+                                    className="article-img"
+                                    src={`${article.multimedia[0].url}`}
+                                    alt={article.title + " image"}
+                                    loading="lazy"
+                                    width="70px"
+                                    height="70px"
+                                  />
+                                </figure>
+                                <div>
+                                  <h2 className="Card__title">
+                                    {truncate(article.title, 20, "...")}
+                                  </h2>
+                                  <p className="Message__time_stamp">
+                                    {truncate(article.abstract, 40, "...")}
+                                  </p>
+                                </div>
+                              </motion.li>
+                            </a>
+                          ))
+                        : null}
+                    </motion.ul>
+                  </AnimatePresence>
                 </motion.div>
               )
             );
           })}
         </AnimatePresence>
-      </motion.div>
+      </motion.main>
       <Footer />
-    </>
+    </div>
+    </div>
   );
 }

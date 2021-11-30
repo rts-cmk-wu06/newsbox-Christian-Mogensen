@@ -6,10 +6,10 @@ const Searchbar = () => {
   animate={{y:0}}
   transition={{delay:0.7}}
     
-    className="relative h-[70px] bg-gray-50">
+    className="relative h-[70px] bg-gray-50 dark:bg-dark-primary-one dark:text-dark-secondary-three">
       <div className="w-full p-5 h-full flex items-center">
         <input
-          className=" w-full bg-[#F0F3F4] searchbar py-2 rounded px-5"
+          className=" w-full outline-none bg-[#F0F3F4] dark:bg-dark-primary-two dark:text-white searchbar py-2 rounded px-5 dark: dark:border-primary-drab dark:border"
           type="text"
           name="search"
           id=""
@@ -23,7 +23,7 @@ const Searchbar = () => {
             className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="var(--Secondary-clr-Fossil)"
+            stroke="currentColor"
           >
             <path
               strokeLinecap="round"

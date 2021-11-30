@@ -30,7 +30,7 @@
   font-family: Rift Soft;
   font-size: 14pt;
   font-weight: demi;
-  color: var(--Typografy-clr-Onyx);
+  /* color: var(--Typografy-clr-Onyx); */
 }
 .Secondary__font:hover{
   color: white;
@@ -45,7 +45,8 @@
 .Body__copy_small,
 .Message__time_stamp {
   font-family: europa, "sans-serif";
-  color: var(--Typografy-clr-Onyx);
+  /* color: var(--Typografy-clr-Onyx); */
+  
 }
 .Sub__title,
 .Card__copy_small,
@@ -116,5 +117,4 @@
 .searchbar{
   font-size: 15pt;
   font-weight: 200;
-  color: var(--Typografy-clr-Slate)
 }
