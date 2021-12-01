@@ -113,10 +113,10 @@ const SettingModal = (props, { section },root) => {
             initial={"hidden"}
             animate={isSetting ? "show" : "hidden"}
             transition={{ ease: "easeOut", duration: 0.4 }}
-            className="min-h-[calc(100vh-120px)] p-4 flex flex-col justify-between bg-[color:var(--Primary-clr-Setup)] dark:bg-dark-primary-one wrapper  overflow-y-auto"
+            className="min-h-[calc(100vh-70px)] p-4 flex flex-col justify-between bg-[color:var(--Primary-clr-Setup)] dark:bg-dark-primary-one wrapper  overflow-y-auto"
           >
             <header className="Header__grafik-element text-center m-8 leading-tight">
-              <h2 className="Primary__heading spc-clr-h1">Manage</h2>
+              <h2 className="font-primary text-5xl font-bold text-primary-sage">Manage</h2>
               <h2 className="Sub__title">Categories</h2>
             </header>
             <div className="rounded-3xl bg-[color:var(--Typografy-clr-Snow)] shadow-lg dark:bg-dark-primary-three">
@@ -129,11 +129,12 @@ const SettingModal = (props, { section },root) => {
             <div className="flex justify-center">
               <button
                 onClick={themeToggle}
-                className="Secondary__font Secondary__font_hover px-8 py-2 border border-[color:var(--Secondary-clr-Fossil)] mt-10 rounded-3xl hover:bg-black hover:text-white] transition-all hover:border-transparent dark:hover:bg-primary-sage"
+                className="font-secondary uppercase px-8 py-2 border border-secondary-fossil mt-10 rounded-3xl hover:bg-black hover:text-white transition-all hover:border-transparent dark:hover:bg-primary-sage"
               >
                 {`toggle ${colorTheme} button`}
               </button>
             </div>
+          <Footer />
           </motion.main>
         </div>
       }

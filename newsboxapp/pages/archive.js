@@ -2,26 +2,181 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Searchbar from "../components/Searchbar";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { LocalStorageContext } from "../components/localStorageContext";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence, animate } from "framer-motion";
 import SettingModal from "../components/SettingModal";
 
+const truncate = (str, max, suffix) =>
+str.length < max
+  ? str
+  : `${str.substr(
+      0,
+      str.substr(0, max - suffix.length).lastIndexOf(" ")
+    )}${suffix}`;
+
+const Bob =
+  "https://images.pexels.com/photos/53487/james-stewart-man-person-actor-53487.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+const John =
+  "https://images.pexels.com/photos/34534/people-peoples-homeless-male.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+const Jane =
+  "https://images.pexels.com/photos/53453/marilyn-monroe-woman-actress-pretty-53453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+const Grace =
+  "https://images.pexels.com/photos/60712/fashion-girl-sexy-women-60712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+
+const abstractS = [
+  {
+    id: 0,
+    multimedia: [{ url: Bob }],
+    title:
+      "     fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 1,
+    multimedia: [{ url: John }],
+    title:
+      "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 2,
+    multimedia: [{ url: Jane }],
+    title:
+      "    itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 3,
+    multimedia: [{ url: Grace }],
+    title:
+      "     elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 4,
+    multimedia: [{ url: Bob }],
+    title:
+      "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 5,
+    multimedia: [{ url: John }],
+    title:
+      "     omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 6,
+    multimedia: [{ url: Jane }],
+    title:
+      "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 7,
+    multimedia: [{ url: Grace }],
+    title: "     nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 8,
+    multimedia: [{ url: Bob }],
+    title:
+      "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 9,
+    multimedia: [{ url: John }],
+    title:
+      "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 10,
+    multimedia: [{ url: Jane }],
+    title:
+      "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "    elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+  {
+    id: 11,
+    multimedia: [{ url: Grace }],
+    title:
+      "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+    abstract:
+      "     consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+  },
+];
+
+const DELETE_BTN_WIDTH = 5;
+
+const abstract_DELETE_ANIMATION = { height: 0, opacity: 0 };
+const abstract_DELETE_TRANSITION = {
+  opacity: {
+    transition: {
+      duration: 0,
+    },
+  },
+};
+
 const archive = (theme) => {
-  useEffect(()=>{
-  if (typeof window !== "undefined") {
-    const root = window.document.documentElement
-    let theme;
-    if (localStorage) {
-    theme = localStorage.getItem("theme")
-    root.classList.add(localStorage.theme);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const root = window.document.documentElement;
+      let theme;
+      if (localStorage) {
+        theme = localStorage.getItem("theme");
+        root.classList.add(localStorage.theme);
+      }
     }
-    }
-  },[theme])
+  }, [theme]);
   const { isToggled, setIsToggled } = useContext(LocalStorageContext);
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: 0.125,
+        delayChildren: 0.125,
+        staggerChildren: 0.125,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: -50 },
+    show: { opacity: 1, x: 0 },
+    exit: { x: -20, opacity: 0 },
+  };
+
+
+  const [abstractsList, setabstractsList] = useState(abstractS);
+
+  const handleDragEnd = (info, abstractId) => {    
+      setabstractsList(
+        abstractsList.filter((abstract) => abstract.id !== abstractId)
+      );
+    
+  };
+
+
   return (
-    <>
-      {/* // Header -> need to look into how to change props dynamically */}
+    <div className="dark:bg-black">
       <Header>
         <Link href="/" exact>
           <a>
@@ -59,9 +214,66 @@ const archive = (theme) => {
       <Searchbar />
 
       {/* // content loaded from fetch */}
-      <div className="min-h-[calc(100vh-190px)]"></div>
+      <ul className="mt-3 min-h-[calc(100vh-202px)]">
+        <AnimatePresence>
+          {abstractsList.map((article) => (
+            <motion.li
+              className="relative"
+              key={article.id}
+              exit={abstract_DELETE_ANIMATION}
+              transition={abstract_DELETE_TRANSITION}
+            >
+              <motion.div
+              onTap={(_, info) => handleDragEnd(info, article.id)}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                onDragEnd={(_, info) => handleDragEnd(info, article.id)}
+                className="relative z-20 bg-secondary-ice flex items-center border-b border-white dark:border-dark-primary-three dark:text-dark-secondary-three dark:bg-dark-primary-one"
+              >
+                <figure className="cover-img">
+                  <img
+                    className="article-img"
+                    src={`${article.multimedia[0].url}`}
+                    alt={article.title + " image"}
+                    loading="lazy"
+                    width="70px"
+                    height="70px"
+                  />
+                </figure>
+
+                <div className="abstract-text">
+                  <h3 className="Card__title">
+                    {truncate(article.title, 20, "...")}
+                  </h3>
+                  <p className="abstract__time_stamp">
+                    {truncate(article.abstract, 40, "...")}
+                  </p>
+                </div>
+              </motion.div>
+              <div className="w-full z-10 top-1/2 right-0 absolute h-[calc(100%-2px)] bg-green-400 flex justify-end items-center -translate-y-1/2">
+                <div className="w-12 h-12 flex justify-center items-center m-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </motion.li>
+          ))}
+        </AnimatePresence>
+      </ul>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -4,6 +4,10 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily:{
+        primary:['europa, sans-serif'],
+        secondary:['rift-soft, sans-serif'],
+      },
       colors: {
         primary: {
           sage: "#87bcbf",
