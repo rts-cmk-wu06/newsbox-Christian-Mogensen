@@ -24,103 +24,103 @@ const Jane =
 const Grace =
   "https://images.pexels.com/photos/60712/fashion-girl-sexy-women-60712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
 
-const abstractS = [
-  {
-    id: 0,
-    multimedia: [{ url: Bob }],
-    title:
-      "     fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 1,
-    multimedia: [{ url: John }],
-    title:
-      "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 2,
-    multimedia: [{ url: Jane }],
-    title:
-      "    itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 3,
-    multimedia: [{ url: Grace }],
-    title:
-      "     elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 4,
-    multimedia: [{ url: Bob }],
-    title:
-      "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 5,
-    multimedia: [{ url: John }],
-    title:
-      "     omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 6,
-    multimedia: [{ url: Jane }],
-    title:
-      "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 7,
-    multimedia: [{ url: Grace }],
-    title: "     nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 8,
-    multimedia: [{ url: Bob }],
-    title:
-      "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 9,
-    multimedia: [{ url: John }],
-    title:
-      "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 10,
-    multimedia: [{ url: Jane }],
-    title:
-      "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "    elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-  {
-    id: 11,
-    multimedia: [{ url: Grace }],
-    title:
-      "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-    abstract:
-      "     consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-  },
-];
+// const abstractS = [
+//   {
+//     id: 0,
+//     multimedia: [{ url: Bob }],
+//     title:
+//       "     fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 1,
+//     multimedia: [{ url: John }],
+//     title:
+//       "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 2,
+//     multimedia: [{ url: Jane }],
+//     title:
+//       "    itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 3,
+//     multimedia: [{ url: Grace }],
+//     title:
+//       "     elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 4,
+//     multimedia: [{ url: Bob }],
+//     title:
+//       "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 5,
+//     multimedia: [{ url: John }],
+//     title:
+//       "     omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 6,
+//     multimedia: [{ url: Jane }],
+//     title:
+//       "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 7,
+//     multimedia: [{ url: Grace }],
+//     title: "     nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 8,
+//     multimedia: [{ url: Bob }],
+//     title:
+//       "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 9,
+//     multimedia: [{ url: John }],
+//     title:
+//       "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 10,
+//     multimedia: [{ url: Jane }],
+//     title:
+//       "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "    elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+//   {
+//     id: 11,
+//     multimedia: [{ url: Grace }],
+//     title:
+//       "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//     abstract:
+//       "     consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
+//   },
+// ];
 
 const DELETE_BTN_WIDTH = 5;
 
@@ -164,13 +164,25 @@ const archive = (theme) => {
     exit: { x: -20, opacity: 0 },
   };
 
+  const archiveMasterArr = []
+  if (typeof window !== "undefined") {
+    
+      const archiveLcl = localStorage.getItem('archiveItem')
+      const archiveParse = JSON.parse(archiveLcl);
+      archiveMasterArr = archiveParse
+    }
+    const [articlesList, setarticlesList] = useState(archiveMasterArr);
+    console.log(archiveMasterArr);
 
-  const [abstractsList, setabstractsList] = useState(abstractS);
+  // const archMaster = archiveMasterArr[0]
 
-  const handleDragEnd = (info, abstractId) => {    
-      setabstractsList(
-        abstractsList.filter((abstract) => abstract.id !== abstractId)
-      );
+  const handleDragEnd = (info, articleTitle) => {    
+    if (typeof window !== "undefined") {
+      setarticlesList(
+        articlesList.filter((article) => article.title !== articleTitle),
+          localStorage.setItem('archiveItem', JSON.stringify(articlesList))
+          );
+        }
     
   };
 
@@ -216,24 +228,24 @@ const archive = (theme) => {
       {/* // content loaded from fetch */}
       <ul className="mt-3 min-h-[calc(100vh-202px)]">
         <AnimatePresence>
-          {abstractsList.map((article) => (
+          {archiveMasterArr.map((article, index) => (
             <motion.li
               className="relative"
-              key={article.id}
+              key={index}
               exit={abstract_DELETE_ANIMATION}
               transition={abstract_DELETE_TRANSITION}
             >
               <motion.div
-              onTap={(_, info) => handleDragEnd(info, article.id)}
+              onTap={(_, info) => handleDragEnd(info, article.title)}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
-                onDragEnd={(_, info) => handleDragEnd(info, article.id)}
+                onDragEnd={(_, info) => handleDragEnd(info, article.title)}
                 className="relative z-20 bg-secondary-ice flex items-center border-b border-white dark:border-dark-primary-three dark:text-dark-secondary-three dark:bg-dark-primary-one"
               >
                 <figure className="cover-img">
                   <img
                     className="article-img"
-                    src={`${article.multimedia[0].url}`}
+                    src={article.img}
                     alt={article.title + " image"}
                     loading="lazy"
                     width="70px"
@@ -244,9 +256,11 @@ const archive = (theme) => {
                 <div className="abstract-text">
                   <h3 className="Card__title">
                     {truncate(article.title, 20, "...")}
+                    {/* {article.title} */}
                   </h3>
                   <p className="abstract__time_stamp">
                     {truncate(article.abstract, 40, "...")}
+                    {/* {article.abstract} */}
                   </p>
                 </div>
               </motion.div>
