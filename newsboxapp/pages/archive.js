@@ -8,119 +8,14 @@ import { motion, AnimatePresence, animate } from "framer-motion";
 import SettingModal from "../components/SettingModal";
 
 const truncate = (str, max, suffix) =>
-str.length < max
-  ? str
-  : `${str.substr(
-      0,
-      str.substr(0, max - suffix.length).lastIndexOf(" ")
-    )}${suffix}`;
+  str.length < max
+    ? str
+    : `${str.substr(
+        0,
+        str.substr(0, max - suffix.length).lastIndexOf(" ")
+      )}${suffix}`;
 
-const Bob =
-  "https://images.pexels.com/photos/53487/james-stewart-man-person-actor-53487.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-const John =
-  "https://images.pexels.com/photos/34534/people-peoples-homeless-male.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-const Jane =
-  "https://images.pexels.com/photos/53453/marilyn-monroe-woman-actress-pretty-53453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-const Grace =
-  "https://images.pexels.com/photos/60712/fashion-girl-sexy-women-60712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
 
-// const abstractS = [
-//   {
-//     id: 0,
-//     multimedia: [{ url: Bob }],
-//     title:
-//       "     fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 1,
-//     multimedia: [{ url: John }],
-//     title:
-//       "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 2,
-//     multimedia: [{ url: Jane }],
-//     title:
-//       "    itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 3,
-//     multimedia: [{ url: Grace }],
-//     title:
-//       "     elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 4,
-//     multimedia: [{ url: Bob }],
-//     title:
-//       "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 5,
-//     multimedia: [{ url: John }],
-//     title:
-//       "     omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 6,
-//     multimedia: [{ url: Jane }],
-//     title:
-//       "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 7,
-//     multimedia: [{ url: Grace }],
-//     title: "     nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "   . Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 8,
-//     multimedia: [{ url: Bob }],
-//     title:
-//       "     Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 9,
-//     multimedia: [{ url: John }],
-//     title:
-//       "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 10,
-//     multimedia: [{ url: Jane }],
-//     title:
-//       "     assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "    elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-//   {
-//     id: 11,
-//     multimedia: [{ url: Grace }],
-//     title:
-//       "     itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//     abstract:
-//       "     consectetur adipisicing elit. Odit fugiat id assumenda sint itaque omnis nobis, porro, aliquam nemo ad mollitia dignissimos. Aliquam.",
-//   },
-// ];
 
 const DELETE_BTN_WIDTH = 5;
 
@@ -164,28 +59,23 @@ const archive = (theme) => {
     exit: { x: -20, opacity: 0 },
   };
 
-  const archiveMasterArr = []
+  const archiveMasterArr = [];
   if (typeof window !== "undefined") {
-    
-      const archiveLcl = localStorage.getItem('archiveItem')
-      const archiveParse = JSON.parse(archiveLcl);
-      archiveMasterArr = archiveParse
-    }
-    const [articlesList, setarticlesList] = useState(archiveMasterArr);
-    console.log(archiveMasterArr);
+    const archiveLcl = localStorage.getItem("archiveItem");
+    const archiveParse = JSON.parse(archiveLcl);
+    archiveMasterArr = archiveParse;
+  }
+  const [articlesList, setarticlesList] = useState(archiveMasterArr);
+  console.log(archiveMasterArr);
 
-  // const archMaster = archiveMasterArr[0]
-
-  const handleDragEnd = (info, articleTitle) => {    
+  const handleDragEnd = (info, articleTitle) => {
     if (typeof window !== "undefined") {
       setarticlesList(
         articlesList.filter((article) => article.title !== articleTitle),
-          localStorage.setItem('archiveItem', JSON.stringify(articlesList))
-          );
-        }
-    
+        localStorage.setItem("archiveItem", JSON.stringify(articlesList))
+      );
+    }
   };
-
 
   return (
     <div className="dark:bg-black">
@@ -236,7 +126,7 @@ const archive = (theme) => {
               transition={abstract_DELETE_TRANSITION}
             >
               <motion.div
-              onTap={(_, info) => handleDragEnd(info, article.title)}
+                onTap={(_, info) => handleDragEnd(info, article.title)}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 onDragEnd={(_, info) => handleDragEnd(info, article.title)}
