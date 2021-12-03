@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Searchbar from "../components/Searchbar";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import Searchbar from "../Components/Searchbar";
 import { useContext, useEffect, useRef, useState } from "react";
-import { LocalStorageContext } from "../components/localStorageContext";
+import { LocalStorageContext } from "../Components/LocalStorageContext";
 import { motion, AnimatePresence, animate } from "framer-motion";
-import SettingModal from "../components/SettingModal";
+import SettingModal from "../Components/SettingModal";
 
 const truncate = (str, max, suffix) =>
   str.length < max
