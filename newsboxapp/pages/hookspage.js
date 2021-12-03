@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Toggle from "../components/test.Toggle";
+import Toggle from "../Components/test.Toggle";
 
 export const getStaticProps = async () => {
   const business = await fetch("https://randomuser.me/api/?results=10");

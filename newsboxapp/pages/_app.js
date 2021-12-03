@@ -1,12 +1,11 @@
-import Header from "../components/Header";
-import Timeleft from "../components/Timeleft";
-import Footer from "../components/Footer";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 import "../styles/header.css";
 import "../styles/footer.css";
 
 import "../styles/styles.css";
 import "../styles/ToggleSwitch.css";
-import { LocalStorageContext } from "../components/localStorageContext";
+import { LocalStorageContext } from "../Components/LocalStorageContext";
 import { useEffect, useState, useMemo } from "react";
 
 function MyApp({ Component, pageProps }) {
