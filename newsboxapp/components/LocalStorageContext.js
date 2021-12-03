@@ -1,3 +1,5 @@
 import {createContext} from 'react'
 
-export const LocalStorageContext = createContext(null)
+const LocalStorageContext = createContext(null)
+
+export default LocalStorageContext
