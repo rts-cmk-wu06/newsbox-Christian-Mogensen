@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://typekit.com/fonts/europa");
+@import url("https://typekit.com/fonts/rift-soft");
+
+:root {
+  /* Color */
+  --Primary-clr-Sage: #87bcbf;
+  --Primary-clr-Rust: #d97d54;
+  --Primary-clr-Drab: #324755;
+  --Primary-clr-Danger: #d95454;
+  --Primary-clr-Setup: #ECEFF0;
+
+  --Secondary-clr-Ice: #f0f3f4;
+  --Secondary-clr-Fossil: #c8d1d3;
+  --Secondary-clr-Sand: #b9b0a2;
+
+  --Typografy-clr-Onyx: #1b1c20;
+  --Typografy-clr-Slate: #6e8ca0;
+  --Typografy-clr-Snow: #ffffff;
+
+  --btn-clr-border: #F0F3F4;
+
+  --Secondary-ff: Rift Soft;
+}
+
+.Secondary__font {
+  font-family: Rift Soft;
+  font-size: 14pt;
+  font-weight: demi;
+  /* color: var(--Typografy-clr-Onyx); */
+}
+.Secondary__font:hover{
+  color: white;
+}
+
+.Sub__title,
+.Card__copy_small,
+.Body__copy_small {
+    color: var(--Typografy-clr-Slate);
+}
+
+.Primary__heading {
+  font-weight: 700;
+  font-size: 30pt;
+}
+
+.Secondary__heading {
+  font-weight: 700;
+  font-size: 24pt;
+}
+.Section__heading {
+  font-weight: 700;
+  font-size: 18pt;
+}
+.Sub__title {
+  font-weight: 400;
+  font-size: 18pt;
+}
+.Card__title {
+  font-weight: 700;
+  font-size: 15pt;
+}
+.Card__copy_small {
+  font-weight: 200;
+  font-size: 15pt;
+}
+.Body__copy_small {
+    font-weight: 200;
+    font-size: 14pt;
+}
+.Message__time_stamp{
+    font-weight: 200;
+    font-size: 12pt;
+}
+
+
+.cover-img{
+  padding: 15px;
+
+
+}
+.article-img {
+  min-width: 70px;
+  max-width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.searchbar{
+  font-size: 15pt;
+  font-weight: 200;
+}

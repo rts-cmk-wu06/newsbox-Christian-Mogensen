@@ -1,0 +1,18 @@
+.Header__grid_column {
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  .Header__grafik-element{
+      position: relative;
+      padding-bottom: 15px;
+  }
+.Header__grafik-element::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 33px;
+    height: 1px;
+    background: white;
+}
