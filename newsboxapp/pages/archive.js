@@ -1,10 +1,11 @@
 import Link from "next/link";
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
-import Searchbar from "../Components/Searchbar";
 import { useContext, useEffect, useRef, useState } from "react";
 import {LocalStorageContext} from "../pages/_app";
 import { motion, AnimatePresence, animate } from "framer-motion";
+
+import Header from "../Components/Header";
+import Searchbar from "../Components/Searchbar";
+import Footer from "../Components/Footer";
 import SettingModal from "../Components/SettingModal";
 
 const truncate = (str, max, suffix) =>
