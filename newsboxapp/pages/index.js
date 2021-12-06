@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState, useRef } from "react";
@@ -7,7 +8,7 @@ import Accordion from "../components/Accordion";
 import AccordionButton from "../components/AccordionButton";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import {LocalStorageContext} from "../pages/_app";
+import { LocalStorageContext } from "../pages/_app";
 import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
 
@@ -158,14 +159,14 @@ export default function Home({
   const [abstractsList, setabstractsList] = useState(false);
   const masterArchiveArr = [];
   const handleDragEnd = (info, abstractId, index, article, value) => {
-    console.log(valueRef.current)
-    
+    console.log(valueRef.current);
+
     // if (typeof window !== "undefined") {
     //   setabstractsList(
     //     localStorage.setItem("archive", JSON.stringify()),
     //     );
     //   }
-    };
+  };
   return (
     <div>
       <div className="dark:bg-dark-primary-one overflow-x-hidden">
@@ -258,7 +259,6 @@ export default function Home({
                             key={article.id}
                             exit={abstract_DELETE_ANIMATION}
                             transition={abstract_DELETE_TRANSITION}
-
                           >
                             <motion.div
                               // onTap={(_, info) =>
@@ -267,31 +267,55 @@ export default function Home({
                               ref={valueRef}
                               drag="x"
                               dragConstraints={{ left: 0, right: 0 }}
-                              onDragEnd={(_, info) =>{
-                                handleDragEnd(info, article.id)
-                                if(masterArchiveArr)
-                                masterArchiveArr.push({"title":article.title,'abstract':article.abstract,'img':article.multimedia[0].url,'url':article.url})
-                                console.log(masterArchiveArr)
-                                localStorage.setItem('archiveItem', JSON.stringify(masterArchiveArr))
-                                console.log(localStorage)
-                              }
-                              }
-                              
-                               
-                            
+                              onDragEnd={(_, info) => {
+                                handleDragEnd(info, article.id);
+                                if (masterArchiveArr)
+                                  masterArchiveArr.push({
+                                    title: article.title,
+                                    abstract: article.abstract,
+                                    img: article.multimedia[0].url,
+                                    url: article.url,
+                                  });
+                                console.log(masterArchiveArr);
+                                localStorage.setItem(
+                                  "archiveItem",
+                                  JSON.stringify(masterArchiveArr)
+                                );
+                                console.log(localStorage);
+                              }}
                               value={article.title}
                               className="relative z-20 bg-secondary-ice flex items-center border-b border-white dark:border-dark-primary-three dark:text-dark-secondary-three dark:bg-dark-primary-one"
                             >
                               <a target="_blank" href={article.url}>
-                                <figure className="cover-img">
-                                  <img
-                                    className="article-img"
-                                    src={`${article.multimedia[0].url}`}
-                                    alt={article.title + " image"}
-                                    loading="lazy"
-                                    width="70px"
-                                    height="70px"
-                                  />
+                                <figure className="cover-img overflow-hidden">
+                                  <div className="relative bg-gray-200 rounded-full flex items-center justify-center">
+                                    <div className="absolute">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-white"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                      >
+                                        <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                        />
+                                      </svg>
+                                    </div>
+                                    <Image
+                                      className="article-img rounded-full overflow-hidden"
+                                      src={`${article.multimedia[0].url}`}
+                                      alt={article.title + " image"}
+                                      loading="lazy"
+                                      width="70px"
+                                      height="70px"
+                                      placeholder="blur"
+                                      blurDataURL
+                                    />
+                                  </div>
                                 </figure>
                               </a>
 

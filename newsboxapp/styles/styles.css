@@ -79,13 +79,13 @@
 
 .cover-img{
   padding: 15px;
-
-
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .article-img {
-  min-width: 70px;
-  max-width: 70px;
-  height: 70px;
   object-fit: cover;
   border-radius: 50%;
 }
