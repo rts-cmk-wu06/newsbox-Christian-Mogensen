@@ -218,6 +218,7 @@ export default function Home({
             return (
               isToggled[accordion.title.toLowerCase()] && (
                 <motion.div
+                  key={index}
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1, ease: "easeOut", duration: 0.125 }}
@@ -256,17 +257,15 @@ export default function Home({
                           <motion.li
                             variants={item}
                             className="relative"
-                            key={article.id}
+                            key={article.short_url}
                             exit={abstract_DELETE_ANIMATION}
                             transition={abstract_DELETE_TRANSITION}
                           >
                             <motion.div
-                              // onTap={(_, info) =>
-                              //   handleDragEnd(info, article.id)
-                              // }
                               ref={valueRef}
                               drag="x"
                               dragConstraints={{ left: 0, right: 0 }}
+                              dragElastic={0.3}
                               onDragEnd={(_, info) => {
                                 handleDragEnd(info, article.id);
                                 if (masterArchiveArr)
@@ -276,12 +275,13 @@ export default function Home({
                                     img: article.multimedia[0].url,
                                     url: article.url,
                                   });
-                                console.log(masterArchiveArr);
+                                console.log(article);
                                 localStorage.setItem(
                                   "archiveItem",
                                   JSON.stringify(masterArchiveArr)
                                 );
                                 console.log(localStorage);
+                                console.log(this);
                               }}
                               value={article.title}
                               className="relative z-20 bg-secondary-ice flex items-center border-b border-white dark:border-dark-primary-three dark:text-dark-secondary-three dark:bg-dark-primary-one"
@@ -292,16 +292,16 @@ export default function Home({
                                     <div className="absolute">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        class="h-6 w-6 text-white"
+                                        className="h-6 w-6 text-white"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
                                       >
                                         <path
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          strokeWidth={2}
+                                          d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
                                         />
                                       </svg>
                                     </div>
