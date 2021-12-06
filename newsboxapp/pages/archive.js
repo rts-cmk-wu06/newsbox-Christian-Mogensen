@@ -3,10 +3,10 @@ import { useContext, useEffect, useRef, useState } from "react";
 import {LocalStorageContext} from "../pages/_app";
 import { motion, AnimatePresence, animate } from "framer-motion";
 
-import Header from "../Components/Header";
-import Searchbar from "../Components/Searchbar";
-import Footer from "../Components/Footer";
-import SettingModal from "../Components/SettingModal";
+import Header from "../components/Header";
+import Searchbar from "../components/Searchbar";
+import Footer from "../components/Footer";
+import SettingModal from "../components/SettingModal";
 
 const truncate = (str, max, suffix) =>
   str.length < max
