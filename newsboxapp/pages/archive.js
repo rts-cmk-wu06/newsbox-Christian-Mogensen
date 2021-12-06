@@ -29,7 +29,7 @@ const abstract_DELETE_TRANSITION = {
   },
 };
 
-const archive = (theme) => {
+const Archive = (theme) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const root = window.document.documentElement;
@@ -171,4 +171,4 @@ const archive = (theme) => {
   );
 };
 
-export default archive;
+export default Archive;
