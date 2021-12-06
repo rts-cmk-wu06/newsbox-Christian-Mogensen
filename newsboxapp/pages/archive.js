@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useContext, useEffect, useRef, useState } from "react";
 import {LocalStorageContext} from "../pages/_app";
 import { motion, AnimatePresence, animate } from "framer-motion";
-
+import Image from 'next/image'
 import Header from "../components/Header";
 import Searchbar from "../components/Searchbar";
 import Footer from "../components/Footer";
@@ -133,16 +133,36 @@ const Archive = (theme) => {
                 onDragEnd={(_, info) => handleDragEnd(info, article.title)}
                 className="relative z-20 bg-secondary-ice flex items-center border-b border-white dark:border-dark-primary-three dark:text-dark-secondary-three dark:bg-dark-primary-one"
               >
-                <figure className="cover-img">
-                  <img
-                    className="article-img"
-                    src={article.img}
-                    alt={article.title + " image"}
-                    loading="lazy"
-                    width="70px"
-                    height="70px"
-                  />
-                </figure>
+               <figure className="cover-img overflow-hidden">
+                                  <div className="relative bg-gray-200 rounded-full flex items-center justify-center">
+                                    <div className="absolute">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-white"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                      >
+                                        <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                        />
+                                      </svg>
+                                    </div>
+                                    <Image
+                                      className="article-img rounded-full overflow-hidden"
+                                      src={`${article.img}`}
+                                      alt={article.title + " image"}
+                                      loading="lazy"
+                                      width="70px"
+                                      height="70px"
+                                      placeholder="blur"
+                                      blurDataURL
+                                    />
+                                  </div>
+                                </figure>
 
                 <div className="abstract-text">
                   <h3 className="Card__title">
