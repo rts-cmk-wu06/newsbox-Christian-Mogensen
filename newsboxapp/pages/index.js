@@ -8,7 +8,7 @@ import AccordionButton from "../Components/AccordionButton";
 import ButtonSetting from "../Components/ButtonSetting";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { LocalStorageContext } from "../Components/localStorageContext";
+import {LocalStorageContext} from "../pages/_app";
 import Searchbar from "../Components/Searchbar";
 import SettingModal from "../Components/SettingModal";
 import ToggleSwitch from "../Components/toggleSwitch";

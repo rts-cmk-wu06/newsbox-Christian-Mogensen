@@ -5,14 +5,18 @@ import "../styles/footer.css";
 
 import "../styles/styles.css";
 import "../styles/ToggleSwitch.css";
-import { LocalStorageContext } from "../Components/LocalStorageContext";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, createContext } from "react";
+
+export const LocalStorageContext = createContext({
+  isToggled: false,
+  setIsToggled: () => {
+  }
+})
 
 function MyApp({ Component, pageProps }) {
-  Timeleft();
   const [isToggled, setIsToggled] = useState(false);
   const value = useMemo(()=>({isToggled, setIsToggled}),[isToggled, setIsToggled])
-
+  
   if (typeof window !== "undefined") {
     useEffect(()=> {
       setIsToggled(JSON.parse(localStorage.getItem('categoryToggle')) || {})
@@ -37,7 +41,6 @@ root.classList.add(localStorage.theme);
   return (
     <>
       <div className={`sm:max-w-[420px]`}>
-        <Timeleft />
         <LocalStorageContext.Provider value={value}>
         <Component {...pageProps} />
         </LocalStorageContext.Provider>

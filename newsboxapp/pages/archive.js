@@ -3,7 +3,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Searchbar from "../Components/Searchbar";
 import { useContext, useEffect, useRef, useState } from "react";
-import { LocalStorageContext } from "../Components/LocalStorageContext";
+import {LocalStorageContext} from "../pages/_app";
 import { motion, AnimatePresence, animate } from "framer-motion";
 import SettingModal from "../Components/SettingModal";
 
@@ -59,7 +59,7 @@ const archive = (theme) => {
     exit: { x: -20, opacity: 0 },
   };
 
-  const archiveMasterArr = [];
+  let archiveMasterArr = [];
   if (typeof window !== "undefined") {
     const archiveLcl = localStorage.getItem("archiveItem");
     const archiveParse = JSON.parse(archiveLcl);
