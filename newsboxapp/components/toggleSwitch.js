@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { LocalStorageContext } from "./LocalStorageContext";
+import {LocalStorageContext} from "../pages/_app";
 
 
 
