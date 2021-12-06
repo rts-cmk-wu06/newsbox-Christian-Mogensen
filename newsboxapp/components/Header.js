@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { settingData } from "../Data/HeaderData";
-import Link from "next/link";
 import {motion}from 'framer-motion'
 
 const Header = ({children}) => {
