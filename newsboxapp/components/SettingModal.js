@@ -1,4 +1,4 @@
-import ToggleSwitch from "../Components/toggleSwitch";
+import ToggleSwitch from "./toggleSwitch";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
