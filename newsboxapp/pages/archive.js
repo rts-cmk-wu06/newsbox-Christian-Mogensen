@@ -119,7 +119,7 @@ const Archive = (theme) => {
       {/* // content loaded from fetch */}
       <ul className="mt-3 min-h-[calc(100vh-202px)]">
         <AnimatePresence>
-          {archiveMasterArr.map((article, index) => (
+          {archiveMasterArr.length && archiveMasterArr.map((article, index) => (
             <motion.li
               className="relative"
               key={index}
