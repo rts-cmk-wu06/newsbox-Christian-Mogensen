@@ -3,15 +3,13 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState, useRef } from "react";
-import Accordion from "../components/accordion";
+import Accordion from "../components/Accordion";
 import AccordionButton from "../components/AccordionButton";
-import ButtonSetting from "../components/ButtonSetting";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {LocalStorageContext} from "../pages/_app";
 import Searchbar from "../components/Searchbar";
 import SettingModal from "../components/SettingModal";
-import ToggleSwitch from "../components/toggleSwitch";
 
 // import Image from 'next/image'
 const apiKey = process.env.NYT_API_KEY;
